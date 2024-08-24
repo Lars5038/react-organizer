@@ -1,6 +1,6 @@
 "use client";
 
-import { convertAPIFolder, dummyFolder, FLDR } from "@/app/lib/Folder";
+import { convertAPIFolder, dummyFolder, FLDR, FolderPool } from "@/app/lib/Folder";
 import FolderStructure, {
   FolderStructureSkeleton,
 } from "@/app/lib/FolderStruc";
@@ -21,30 +21,10 @@ export default function Layout({
   useEffect(() => {
     if (folder == null) {
       const id = "b0ec7c6c-af54-4511-bb75-0b2a19aebd54"; // HOME Folder
-
-      const options = {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
-
-      fetch(`http://localhost:3000/folders/${id}/self`, options)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
-        })
-        .then((homeFolder) => {
-          if (homeFolder) {
-            setFolder(convertAPIFolder(homeFolder));
-          }
-        })
-        .catch((err) => {
-          console.error(err);
-          setError(err.message);
-        });
+      FolderPool.get(id).then((folder) => {
+        if(folder)
+          setFolder(folder);
+      })
     }
   }); // Dependency array is empty, so this runs once on mount
 

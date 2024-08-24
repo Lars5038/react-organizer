@@ -42,7 +42,52 @@ export let dummyFolder = {
   files: [],
   parents: [],
   size: 0,
-};
+} as FLDR;
+
+export class FolderPool {
+  static pool = new Map<string, FLDR>();
+
+  static poolCount = 0;
+  static fetchCount = 0;
+
+  static async get(id: string) {
+    let f = this.pool.get(id);
+    if (f != undefined) {
+      this.poolCount++;
+      // this.printPoolCount();
+      return f;
+    }
+
+    try {
+      this.fetchCount++;
+      // this.printPoolCount();
+      const response = await fetch(`http://localhost:3000/folders/${id}/self`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const folderResp = await response.json();
+      let folder = convertAPIFolder(folderResp);
+      this.pool.set(folder.id, folder);
+      return folder;
+    } catch (err: any) {
+      console.error("Error fetching folders:", err);
+    }
+    return dummyFolder;
+  }
+
+  static printPoolCount() {
+    console.log(
+      `Fetched ${this.fetchCount} folders and pulled ${this.poolCount} from pool!`
+    );
+  }
+}
 
 export const toggleFolderOpen = (id: string, folders: FLDR[]): FLDR[] => {
   const updateFolderOpenState = (folders: FLDR[]): FLDR[] => {
@@ -78,9 +123,9 @@ export const fetchChildFolders = async (
   setFolders: React.Dispatch<React.SetStateAction<FLDR[]>>
 ) => {
   try {
-    const response = await fetch(`http://localhost:3000/folders/${id}/self`);
-    const folder = await response.json();
-    const childFolders = convertAPIFolder(folder).children;
+    const folder = await FolderPool.get(id);
+    if (!folder) return folder;
+    const childFolders = folder.children;
 
     const updateFolders = (parent: FLDR, fid: string): FLDR => {
       if (parent.fid === fid) {
@@ -299,7 +344,15 @@ export function CollapsableFolderSkeleton({ folder }: { folder: FLDR_Skel }) {
   );
 }
 
-export function GalleryFolder({ folder, onMouseEnter, onMouseLeave}: { folder: FLDR, onMouseEnter?: any, onMouseLeave?: any}) {
+export function GalleryFolder({
+  folder,
+  onMouseEnter,
+  onMouseLeave,
+}: {
+  folder: FLDR;
+  onMouseEnter?: any;
+  onMouseLeave?: any;
+}) {
   const createFolderLink = (folderId: string) => {
     const url = new URL(window.location.href);
     url.searchParams.set("id", folderId);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { convertAPIFolder, dummyFolder, FLDR, GalleryFolder } from "./Folder";
+import { convertAPIFolder, dummyFolder, FLDR, FolderPool, GalleryFolder } from "./Folder";
 import { v4 as uuidv4 } from "uuid";
 import { useSearchParams } from "next/navigation";
 import { FILE, GalleryFile } from "./File";
@@ -24,25 +24,11 @@ export default function FolderView() {
 
     const fetchChildFolders = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:3000/folders/${id}/self`,
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        const folderResp = await response.json();
-        let folder_ = convertAPIFolder(folderResp);
-        setFolder(folder_);
-        setFolders(folder_.children);
-        setFiles(folder_.files);
+        let folder = await FolderPool.get(id);
+        if(!folder) return;
+        setFolder(folder);
+        setFolders(folder.children);
+        setFiles(folder.files);
       } catch (err: any) {
         console.error("Error fetching folders:", err);
         setError(err.message);
@@ -68,8 +54,8 @@ export default function FolderView() {
             <GalleryFolder
               key={child.fid}
               folder={child}
-              onMouseEnter={() => {
-                setSelectedMedia({ type: "folder", media: child });
+              onMouseEnter={async () => {
+                setSelectedMedia({ type: "folder", media: await FolderPool.get(child.id) });
               }}
               onMouseLeave={() => setSelectedMedia(nullMedia)}
             />
