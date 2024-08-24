@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Folder {
+  id               String         @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name             String         @db.VarChar(255)
+  creationDate     DateTime       @db.Timestamp(6)
+  modificationDate DateTime       @db.Timestamp(6)
+  description      String?
+  FolderFile       FolderFile[]
+  ParentFolders    FolderFolder[] @relation("ParentFolders")
+  ChildFolders     FolderFolder[] @relation("ChildFolders")
+  FolderTag        FolderTag[]
+}
+
+model File {
+  id               String       @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name             String       @db.VarChar(255)
+  creationDate     DateTime     @db.Timestamp(6)
+  modificationDate DateTime     @db.Timestamp(6)
+  description      String?
+  path             String       @db.VarChar(1024)
+  version          Int?
+  size             BigInt?
+  FileTag          FileTag[]
+  FolderFile       FolderFile[]
+}
+
+model Tag {
+  id               String      @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name             String      @db.VarChar(255)
+  color            String?     @db.VarChar(7)
+  creationDate     DateTime    @db.Timestamp(6)
+  modificationDate DateTime    @db.Timestamp(6)
+  description      String?
+  FileTag          FileTag[]
+  FolderTag        FolderTag[]
+  ChildTags        TagTag[]    @relation("ChildTags")
+  ParentTags       TagTag[]    @relation("ParentTags")
+}
+
+model FolderFile {
+  folderid String @db.Uuid
+  fileid   String @db.Uuid
+  File     File   @relation(fields: [fileid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  Folder   Folder @relation(fields: [folderid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([folderid, fileid])
+}
+
+model FolderTag {
+  folderid String @db.Uuid
+  tagid    String @db.Uuid
+  Folder   Folder @relation(fields: [folderid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  Tag      Tag    @relation(fields: [tagid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([folderid, tagid])
+}
+
+model FileTag {
+  fileid String @db.Uuid
+  tagid  String @db.Uuid
+  File   File   @relation(fields: [fileid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  Tag    Tag    @relation(fields: [tagid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([fileid, tagid])
+}
+
+model FolderFolder {
+  parentfolderid String @db.Uuid
+  childfolderid  String @db.Uuid
+  ChildFolder    Folder @relation("ParentFolders", fields: [childfolderid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  ParentFolder   Folder @relation("ChildFolders", fields: [parentfolderid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([parentfolderid, childfolderid])
+}
+
+model TagTag {
+  parenttagid String @db.Uuid
+  childtagid  String @db.Uuid
+  ChildTag    Tag    @relation("ChildTags", fields: [childtagid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  ParentTag   Tag    @relation("ParentTags", fields: [parenttagid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([parenttagid, childtagid])
+}

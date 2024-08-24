@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                           // Specify ECMAScript target version: 'ES6'
+      "module": "commonjs",                      // Specify module code generation: 'commonjs' or 'ES6'
+      "strict": true,                            // Enable all strict type-checking options
+      "esModuleInterop": true,                   // Enables emit interoperability between CommonJS and ES Modules via creation of `__importStar` and `__importDefault`
+      "skipLibCheck": true,                      // Skip type checking of all declaration files
+      "forceConsistentCasingInFileNames": true  // Disallow inconsistently-cased references to the same file
+    },
+    "include": [
+      "./**/*"                                   // Include all TypeScript files in the 'src' directory and subdirectories
+    ],
+    "exclude": [
+      "node_modules",                            // Exclude 'node_modules' directory
+      "**/*.spec.ts"                             // Exclude all test files with .spec.ts extension
+    ]
+  }
+  

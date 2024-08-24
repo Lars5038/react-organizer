@@ -1,0 +1,33 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "tsc compile_server.ts && node compile_server.js",
+        "start": "npm run compile && start.bat"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.2",
+        "@types/busboy": "^1.5.4",
+        "@types/formidable": "^3.4.5",
+        "@types/jsonwebtoken": "^9.0.6",
+        "@types/mime-types": "^2.1.4",
+        "@types/multiparty": "^0.0.36",
+        "@types/node": "^20.12.12",
+        "prisma": "^5.18.0"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.18.0",
+        "bcrypt": "^5.1.1",
+        "busboy": "^1.6.0",
+        "child_process": "^1.0.2",
+        "formidable": "^3.5.1",
+        "http": "^0.0.1-security",
+        "jsonwebtoken": "^9.0.2"
+    }
+}
