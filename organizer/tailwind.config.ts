@@ -15,9 +15,11 @@ const config: Config = {
       },
       gridTemplateColumns: {
         "auto-fill-32": "repeat(auto-fill, minmax(128px, 1fr))",
+        "auto-fill-48": "repeat(auto-fill, minmax(192px, 1fr))",
       },
       gridTemplateRows: {
         "auto-fill-32": "repeat(auto-fill, minmax(128px, 1fr))",
+        "auto-fill-48": "repeat(auto-fill, minmax(192px, 1fr))",
       },
       colors: {
         red: {

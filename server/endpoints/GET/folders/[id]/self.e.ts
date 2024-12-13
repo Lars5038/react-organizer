@@ -1,9 +1,3 @@
-declare global {
-  interface BigInt {
-      toJSON(): Number;
-  }
-}
-
 BigInt.prototype.toJSON = function () { return Number(this) }
 
 import { IncomingMessage, ServerResponse } from "http";
@@ -19,12 +13,23 @@ export const execute = async (
   res: ServerResponse,
   body: string,
   chunks: Buffer[],
-  params: Record<string, string>
+  params: Record<string, string>,
+  reqId: string
 ) => {
   let id = params.id;
   if (typeof id !== "string") {
     res.statusCode = 400;
-    res.end(JSON.stringify({ error: "Invalid folder ID" }));
+    let response = {error: "Invalid folder ID"}
+    res.end(JSON.stringify(response));
+    Global.log.info({
+      src: "self.e.ts",
+      msg: "Ending GET request to /folder/[id]/self/ with response",
+      data: {
+        id: reqId,
+        statusCode: res.statusCode, 
+        response: response
+      },
+    })
     return true;
   }
 
@@ -60,12 +65,32 @@ export const execute = async (
       // console.log(folder);
 
     res.statusCode = 200;
-    res.end(JSON.stringify({folder}));
+    let response = {folder}
+    res.end(JSON.stringify(response));
+    Global.log.info({
+      src: "self.e.ts",
+      msg: "Ending GET request to /folder/[id]/self/ with response",
+      data: {
+        id: reqId,
+        statusCode: res.statusCode, 
+        response: "Hiding response - Response [folder]"
+      },
+    })
     return true;
   } catch (error) {
     console.error(error);
     res.statusCode = 500;
-    res.end(JSON.stringify({ error: "Error fetching child folders" }));
+    let response = { error: "Error fetching folder" };
+    res.end(JSON.stringify(response));
+    Global.log.info({
+      src: "self.e.ts",
+      msg: "Ending GET request to /folder/[id]/self/ with response badly",
+      data: {
+        id: reqId,
+        statusCode: res.statusCode, 
+        response: response
+      },
+    })
     return true;
   }
 };

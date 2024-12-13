@@ -1,5 +1,7 @@
 import { createServer, IncomingMessage, ServerResponse } from "http";
 import { authenticate, login } from "./auth";
+import Global from "./statics";
+import {v4 as uuidv4} from "uuid";
 
 // Parsing Methods for Url Params
 function getParamValuesFromUrl(
@@ -54,6 +56,22 @@ const server = createServer(
   async (req: IncomingMessage, res: ServerResponse) => {
     let body = "";
     let chunks: Buffer[] = [];
+    let reqId = uuidv4();
+    
+    Global.log.info({
+      src: "SERVER (server.ex.ts)", 
+      msg: "Incoming request",
+      data: {
+        id: reqId,
+        request: {
+          method: req.method, 
+          headers: req.headers, 
+          url: req.url,
+          httpVersion: req.httpVersion
+        },
+      }
+    })
+
     req.on("data", (chunk: Buffer) => {
       body += chunk.toString();
       chunks.push(chunk);
@@ -63,11 +81,11 @@ const server = createServer(
       res.setHeader("Access-Control-Allow-Origin", "*"); // Update with your frontend URL
       res.setHeader(
         "Access-Control-Allow-Methods",
-        "GET, POST, PUT, DELETE, OPTIONS"
+        "GET, POST, PUT, DELETE, OPTIONS, UPDATE"
       );
       res.setHeader(
         "Access-Control-Allow-Headers",
-        "Content-Type, Authorization, X-File-Path"
+        "*"
       );
 
       try {
@@ -89,7 +107,7 @@ const server = createServer(
           typeof authenticateModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/authenticate");
-          let ret = await authenticateModule.execute(req, res, body, chunks, params);
+          let ret = await authenticateModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -107,7 +125,7 @@ const server = createServer(
           typeof fileModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/file");
-          let ret = await fileModule.execute(req, res, body, chunks, params);
+          let ret = await fileModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -125,7 +143,7 @@ const server = createServer(
           typeof folders__id__selfModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/folders/[id]/self");
-          let ret = await folders__id__selfModule.execute(req, res, body, chunks, params);
+          let ret = await folders__id__selfModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -143,7 +161,7 @@ const server = createServer(
           typeof getModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/get");
-          let ret = await getModule.execute(req, res, body, chunks, params);
+          let ret = await getModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -161,7 +179,7 @@ const server = createServer(
           typeof _id__runModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/[id]/run");
-          let ret = await _id__runModule.execute(req, res, body, chunks, params);
+          let ret = await _id__runModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -178,25 +196,7 @@ const server = createServer(
     } // IF GET END
 if (req.method === "POST") { // IF POST START 
 
-   if (getParamValuesFromUrl(req.url, "/execute/ls") != null) { // IF execute/ls.e.ts START
-    let execute_lsModule = await import("./endpoints/POST/execute/ls.e.js");
-    if (execute_lsModule.options) {  
-      let authenticated = authenticate(req, res, async () => {
-        if (
-          execute_lsModule.execute &&
-          typeof execute_lsModule.execute === "function"
-        ) {
-          let params = getParamValuesFromUrl(req.url, "/execute/ls");
-          let ret = await execute_lsModule.execute(req, res, body, chunks, params);
-          if (ret) 
-            return;
-        }
-      }, execute_lsModule.options.permissions);
-      return;
-    }
-  } // IF /execute/ls.e.ts END
-
-  else if (getParamValuesFromUrl(req.url, "/execute") != null) { // IF execute.e.ts START
+   if (getParamValuesFromUrl(req.url, "/execute") != null) { // IF execute.e.ts START
     let executeModule = await import("./endpoints/POST/execute.e.js");
     if (executeModule.options) {  
       let authenticated = authenticate(req, res, async () => {
@@ -205,7 +205,7 @@ if (req.method === "POST") { // IF POST START
           typeof executeModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/execute");
-          let ret = await executeModule.execute(req, res, body, chunks, params);
+          let ret = await executeModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -213,6 +213,24 @@ if (req.method === "POST") { // IF POST START
       return;
     }
   } // IF /execute.e.ts END
+
+  else if (getParamValuesFromUrl(req.url, "/folders/create") != null) { // IF folders/create.e.ts START
+    let folders_createModule = await import("./endpoints/POST/folders/create.e.js");
+    if (folders_createModule.options) {  
+      let authenticated = authenticate(req, res, async () => {
+        if (
+          folders_createModule.execute &&
+          typeof folders_createModule.execute === "function"
+        ) {
+          let params = getParamValuesFromUrl(req.url, "/folders/create");
+          let ret = await folders_createModule.execute(req, res, body, chunks, params, reqId);
+          if (ret) 
+            return;
+        }
+      }, folders_createModule.options.permissions);
+      return;
+    }
+  } // IF /folders/create.e.ts END
 
   else if (getParamValuesFromUrl(req.url, "/upload") != null) { // IF upload.e.ts START
     let uploadModule = await import("./endpoints/POST/upload.e.js");
@@ -223,7 +241,7 @@ if (req.method === "POST") { // IF POST START
           typeof uploadModule.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/upload");
-          let ret = await uploadModule.execute(req, res, body, chunks, params);
+          let ret = await uploadModule.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -238,6 +256,32 @@ if (req.method === "POST") { // IF POST START
         return;
       }
     } // IF POST END
+if (req.method === "PUT") { // IF PUT START 
+
+   if (getParamValuesFromUrl(req.url, "/folders/[id]/modify") != null) { // IF folders/[id]/modify.e.ts START
+    let folders__id__modifyModule = await import("./endpoints/PUT/folders/[id]/modify.e.js");
+    if (folders__id__modifyModule.options) {  
+      let authenticated = authenticate(req, res, async () => {
+        if (
+          folders__id__modifyModule.execute &&
+          typeof folders__id__modifyModule.execute === "function"
+        ) {
+          let params = getParamValuesFromUrl(req.url, "/folders/[id]/modify");
+          let ret = await folders__id__modifyModule.execute(req, res, body, chunks, params, reqId);
+          if (ret) 
+            return;
+        }
+      }, folders__id__modifyModule.options.permissions);
+      return;
+    }
+  } // IF /folders/[id]/modify.e.ts END
+
+      else {
+        res.statusCode = 404;
+        res.end(JSON.stringify({ message: 'Not Found' }));
+        return;
+      }
+    } // IF PUT END
 
       else {
         res.statusCode = 404;
@@ -259,5 +303,60 @@ if (req.method === "POST") { // IF POST START
 );
 
 server.listen(port, hostname, async () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  Global.log.start()
+  Global.log.sys({msg: `Server running at http://${hostname}:${port}/`, src: "server.ex.ts", data: {
+    running: "true",
+    hostname: hostname,
+    port: port
+  }});
+});
+
+const shutdownHandler = () => {
+  Global.log.sys({ msg: "Server is shutting down.", src: "server.ex.ts", data: {
+    running: "false",
+    hostname: hostname,
+    port: port
+  }});
+  process.exit();
+};
+
+process.on('SIGINT', shutdownHandler);
+process.on('SIGTERM', shutdownHandler);
+
+process.on('warning', (warning) => {
+  Global.log.warning({ msg: "Warning encountered.", src: "server.ex.ts", data: {
+    name: warning.name,
+    message: warning.message,
+    stack: warning.stack
+  }});
+});
+
+process.on('beforeExit', (code) => {
+  Global.log.sys({ msg: `Node is about to exit with code: ${code}`, src: "server.ex.ts", data: {code: code} });
+});
+
+process.on('exit', (code) => {
+  Global.log.sys({ msg: `Process exited with code ${code}.`, src: "server.ex.ts", data: {code: code} });
+});
+
+process.on('uncaughtException', (error) => {
+  Global.log.error({ msg: "Server encountered an uncaught exception and is shutting down.", src: "server.ex.ts", data: {
+    running: "false",
+    hostname: hostname,
+    port: port,
+    error: error.message,
+    stack: error.stack
+  }});
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  Global.log.error({ msg: "Server encountered an unhandled promise rejection.", src: "server.ex.ts", data: {
+    running: "false",
+    hostname: hostname,
+    port: port,
+    reason: reason,
+    promise: promise
+  }});
+  process.exit(1);
 });

@@ -1,0 +1,3160 @@
+
+[SYSTEM]: 2024-10-10_13-04-22-625+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000
+
+[INFO  ]: 2024-10-10_13-04-34-314+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ab15b519-8e40-44f3-ac36-dae743864128
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-34-327+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 360e0211-a3ad-468f-b67f-e831d14bbafa
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-34-335+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 23b33b27-d25b-44f8-8345-3923f762cbf0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-34-361+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: aef7b284-7e1b-4783-8a8a-338a88846661
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-38-467+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 23b33b27-d25b-44f8-8345-3923f762cbf0
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-38-485+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: aef7b284-7e1b-4783-8a8a-338a88846661
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-38-504+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a0aafd0a-6770-4b89-9899-1f133fcdf5c5
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-38-516+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 07bbcfce-c87f-4d13-846a-76a69ef4e31b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-38-531+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4ab31e7f-88d7-43bf-912f-6a45f020560e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-38-541+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 257255d4-132c-4255-a917-3fd29979c2ab
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-38-600+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 3ad1e9a3-3615-4e9d-be67-4078c4c37c19
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-38-609+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 157c22fc-b94f-4717-9924-3a64358db2e5
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-42-603+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: a0aafd0a-6770-4b89-9899-1f133fcdf5c5
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-42-614+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 07bbcfce-c87f-4d13-846a-76a69ef4e31b
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-42-628+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 4ab31e7f-88d7-43bf-912f-6a45f020560e
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-42-637+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 257255d4-132c-4255-a917-3fd29979c2ab
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-42-646+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 3ad1e9a3-3615-4e9d-be67-4078c4c37c19
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-42-654+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 157c22fc-b94f-4717-9924-3a64358db2e5
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-42-664+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 969d7d9d-d6fa-4b72-adf3-ba68f841d4c4
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-42-686+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d3bd9804-360f-45ba-8f89-be32f47d427e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-04-46-765+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: 969d7d9d-d6fa-4b72-adf3-ba68f841d4c4
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-04-46-774+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response badly
+              id: d3bd9804-360f-45ba-8f89-be32f47d427e
+              statusCode: 500
+              response: 
+                error: Error fetching folder
+
+[INFO  ]: 2024-10-10_13-06-59-765+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 219a9353-90e5-45f4-b997-fb3f88bce5cd
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-772+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 70d4af5f-642f-482b-bded-c828b67afa6f
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-778+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 278d81da-f368-48e8-94a9-c5aff75227f3
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-791+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c4afec2a-763f-4008-b4ad-3f1c0461b830
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-802+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 7fde39fd-a027-471b-8d91-940120b527c8
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-814+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 64710e74-5651-4148-9b22-9565e188a3b5
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-828+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 48a0564d-b730-4f40-9b0f-24cb998e8c83
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-840+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 20d1af3c-420d-428e-8ae6-a03ac769fd5d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-852+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a97b0e6c-7d57-40d1-b25e-36421f14d44c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-863+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 5490a2bc-fbad-47d7-8878-96c128004033
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-887+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: dac7a99c-9582-4406-80b3-f3b754ae89de
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-06-59-908+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 62f44578-b1a9-4612-a430-55dc14bd6e7a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-115+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a97b0e6c-7d57-40d1-b25e-36421f14d44c
+              statusCode: 200
+              response: 
+                folder: 
+                  id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                  name: HOME
+                  creationDate: 
+                  modificationDate: 
+                  description: Home Folder has now got a new Description!
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ChildFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    1: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      ChildFolder: 
+                        id: 5a87ab61-7915-49db-b16b-fd40f0468334
+                        name: Sub Folder 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is another subfolder of root
+                    2: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                    3: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                    4: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ChildFolder: 
+                        id: 12289b1e-431d-4b8c-a297-1ac56656189b
+                        name: Folder C
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder C description
+                    5: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ChildFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                    6: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      ChildFolder: 
+                        id: adb0be13-a9e1-4d49-be10-a42951a1d904
+                        name: Folder E
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder E description
+                    7: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      ChildFolder: 
+                        id: 136da036-bff9-4f91-8597-cc0823c38df7
+                        name: Folder F
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder F description
+                    8: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      ChildFolder: 
+                        id: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                        name: Folder G
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder G description
+                  ParentFolders: 
+                  FolderFile: 
+                    0: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      fileid: 52254998-3ef2-412b-a45c-8166948f21b7
+                      File: 
+                        id: 52254998-3ef2-412b-a45c-8166948f21b7
+                        name: File 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 1 in the root folder
+                        path: /root/file1.txt
+                        version: 1
+                        size: 1024
+                    1: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      fileid: 9a74e799-6dd1-4aa9-9e80-695e4c4d2870
+                      File: 
+                        id: 9a74e799-6dd1-4aa9-9e80-695e4c4d2870
+                        name: File 10
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 10
+                        path: /root/file10.txt
+                        version: 1
+                        size: 4096
+                  FolderTag: 
+                    0: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      tagid: aef0f4e6-9d95-4fb0-b686-1f117fc45410
+                      Tag: 
+                        id: aef0f4e6-9d95-4fb0-b686-1f117fc45410
+                        name: Important
+                        color: #FF0000
+                        creationDate: 
+                        modificationDate: 
+                        description: Important files
+                    1: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      tagid: b8ab4beb-8f9a-4a3d-b900-e410b12716ce
+                      Tag: 
+                        id: b8ab4beb-8f9a-4a3d-b900-e410b12716ce
+                        name: Completed
+                        color: #008000
+                        creationDate: 
+                        modificationDate: 
+                        description: Completed files
+
+[INFO  ]: 2024-10-10_13-07-00-145+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: b49b959e-79d9-42af-bae0-c9c88b83e25b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-159+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 48a0564d-b730-4f40-9b0f-24cb998e8c83
+              statusCode: 200
+              response: 
+                folder: 
+                  id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                  name: Sub Folder 1
+                  creationDate: 
+                  modificationDate: 
+                  description: This is a subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      fileid: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                      File: 
+                        id: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                        name: File 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 2 in sub folder 1
+                        path: /root/sub1/file2.txt
+                        version: 1
+                        size: 2048
+                  FolderTag: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      tagid: 451944e0-2182-4d8f-93cf-138d989038b6
+                      Tag: 
+                        id: 451944e0-2182-4d8f-93cf-138d989038b6
+                        name: Archived
+                        color: #00FF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Archived files
+
+[INFO  ]: 2024-10-10_13-07-00-185+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 62f44578-b1a9-4612-a430-55dc14bd6e7a
+              statusCode: 200
+              response: 
+                folder: 
+                  id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                  name: HOME
+                  creationDate: 
+                  modificationDate: 
+                  description: Home Folder has now got a new Description!
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ChildFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    1: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      ChildFolder: 
+                        id: 5a87ab61-7915-49db-b16b-fd40f0468334
+                        name: Sub Folder 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is another subfolder of root
+                    2: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                    3: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                    4: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ChildFolder: 
+                        id: 12289b1e-431d-4b8c-a297-1ac56656189b
+                        name: Folder C
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder C description
+                    5: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ChildFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                    6: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      ChildFolder: 
+                        id: adb0be13-a9e1-4d49-be10-a42951a1d904
+                        name: Folder E
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder E description
+                    7: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      ChildFolder: 
+                        id: 136da036-bff9-4f91-8597-cc0823c38df7
+                        name: Folder F
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder F description
+                    8: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      ChildFolder: 
+                        id: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                        name: Folder G
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder G description
+                  ParentFolders: 
+                  FolderFile: 
+                    0: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      fileid: 52254998-3ef2-412b-a45c-8166948f21b7
+                      File: 
+                        id: 52254998-3ef2-412b-a45c-8166948f21b7
+                        name: File 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 1 in the root folder
+                        path: /root/file1.txt
+                        version: 1
+                        size: 1024
+                    1: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      fileid: 9a74e799-6dd1-4aa9-9e80-695e4c4d2870
+                      File: 
+                        id: 9a74e799-6dd1-4aa9-9e80-695e4c4d2870
+                        name: File 10
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 10
+                        path: /root/file10.txt
+                        version: 1
+                        size: 4096
+                  FolderTag: 
+                    0: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      tagid: aef0f4e6-9d95-4fb0-b686-1f117fc45410
+                      Tag: 
+                        id: aef0f4e6-9d95-4fb0-b686-1f117fc45410
+                        name: Important
+                        color: #FF0000
+                        creationDate: 
+                        modificationDate: 
+                        description: Important files
+                    1: 
+                      folderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      tagid: b8ab4beb-8f9a-4a3d-b900-e410b12716ce
+                      Tag: 
+                        id: b8ab4beb-8f9a-4a3d-b900-e410b12716ce
+                        name: Completed
+                        color: #008000
+                        creationDate: 
+                        modificationDate: 
+                        description: Completed files
+
+[INFO  ]: 2024-10-10_13-07-00-222+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: dac7a99c-9582-4406-80b3-f3b754ae89de
+              statusCode: 200
+              response: 
+                folder: 
+                  id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                  name: Sub Folder 1
+                  creationDate: 
+                  modificationDate: 
+                  description: This is a subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      fileid: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                      File: 
+                        id: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                        name: File 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 2 in sub folder 1
+                        path: /root/sub1/file2.txt
+                        version: 1
+                        size: 2048
+                  FolderTag: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      tagid: 451944e0-2182-4d8f-93cf-138d989038b6
+                      Tag: 
+                        id: 451944e0-2182-4d8f-93cf-138d989038b6
+                        name: Archived
+                        color: #00FF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Archived files
+
+[INFO  ]: 2024-10-10_13-07-00-236+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: b49b959e-79d9-42af-bae0-c9c88b83e25b
+              statusCode: 200
+              response: 
+                folder: 
+                  id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                  name: Sub Folder 1
+                  creationDate: 
+                  modificationDate: 
+                  description: This is a subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      fileid: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                      File: 
+                        id: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                        name: File 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 2 in sub folder 1
+                        path: /root/sub1/file2.txt
+                        version: 1
+                        size: 2048
+                  FolderTag: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      tagid: 451944e0-2182-4d8f-93cf-138d989038b6
+                      Tag: 
+                        id: 451944e0-2182-4d8f-93cf-138d989038b6
+                        name: Archived
+                        color: #00FF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Archived files
+
+[INFO  ]: 2024-10-10_13-07-00-259+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 5490a2bc-fbad-47d7-8878-96c128004033
+              statusCode: 200
+              response: 
+                folder: 
+                  id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                  name: Sub Folder 1
+                  creationDate: 
+                  modificationDate: 
+                  description: This is a subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      fileid: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                      File: 
+                        id: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                        name: File 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 2 in sub folder 1
+                        path: /root/sub1/file2.txt
+                        version: 1
+                        size: 2048
+                  FolderTag: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      tagid: 451944e0-2182-4d8f-93cf-138d989038b6
+                      Tag: 
+                        id: 451944e0-2182-4d8f-93cf-138d989038b6
+                        name: Archived
+                        color: #00FF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Archived files
+
+[INFO  ]: 2024-10-10_13-07-00-277+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 20d1af3c-420d-428e-8ae6-a03ac769fd5d
+              statusCode: 200
+              response: 
+                folder: 
+                  id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                  name: Sub Folder 1
+                  creationDate: 
+                  modificationDate: 
+                  description: This is a subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      fileid: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                      File: 
+                        id: b90b66a2-7ba5-48ce-8266-330352e1d9a9
+                        name: File 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 2 in sub folder 1
+                        path: /root/sub1/file2.txt
+                        version: 1
+                        size: 2048
+                  FolderTag: 
+                    0: 
+                      folderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      tagid: 451944e0-2182-4d8f-93cf-138d989038b6
+                      Tag: 
+                        id: 451944e0-2182-4d8f-93cf-138d989038b6
+                        name: Archived
+                        color: #00FF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Archived files
+
+[INFO  ]: 2024-10-10_13-07-00-294+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6c5d316a-9db3-4eaa-aeb8-6c5333fda744
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-316+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 76b7ef56-673d-49db-ab1e-7ba57b84e350
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-352+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 76b7ef56-673d-49db-ab1e-7ba57b84e350
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                  name: Folder B
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder B description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    2: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  FolderFile: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      fileid: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                      File: 
+                        id: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                        name: File 4
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 4
+                        path: /folderB/file4.txt
+                        version: 1
+                        size: 256
+                  FolderTag: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      tagid: 2128e976-8170-43d1-ab60-db86e299a56c
+                      Tag: 
+                        id: 2128e976-8170-43d1-ab60-db86e299a56c
+                        name: Review
+                        color: #FFFF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Files under review
+
+[INFO  ]: 2024-10-10_13-07-00-374+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 9e27f317-95ec-47ba-ab4c-113d19a39b35
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-385+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 46cd9f03-269d-475c-b496-dbe6d9ae3a43
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-407+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 9e27f317-95ec-47ba-ab4c-113d19a39b35
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                  name: Folder B
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder B description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    2: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  FolderFile: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      fileid: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                      File: 
+                        id: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                        name: File 4
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 4
+                        path: /folderB/file4.txt
+                        version: 1
+                        size: 256
+                  FolderTag: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      tagid: 2128e976-8170-43d1-ab60-db86e299a56c
+                      Tag: 
+                        id: 2128e976-8170-43d1-ab60-db86e299a56c
+                        name: Review
+                        color: #FFFF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Files under review
+
+[INFO  ]: 2024-10-10_13-07-00-425+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 32a8deda-7d95-4598-bc48-daada2fc263d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-439+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c7edecbc-fa99-4917-9abf-bbdf608f4ad1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-452+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 32a8deda-7d95-4598-bc48-daada2fc263d
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 5bd2c513-a462-4061-97fc-e935db527514
+                  name: Folder A
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder A description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ChildFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ParentFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  FolderFile: 
+                    0: 
+                      folderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      fileid: 199a0dcd-8b1c-4b4d-a2b1-7867e1f13beb
+                      File: 
+                        id: 199a0dcd-8b1c-4b4d-a2b1-7867e1f13beb
+                        name: File 3
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 3
+                        path: /folderA/file3.txt
+                        version: 1
+                        size: 512
+                  FolderTag: 
+                    0: 
+                      folderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      tagid: 7571c5e8-5a7e-4121-a788-bbbd43707b20
+                      Tag: 
+                        id: 7571c5e8-5a7e-4121-a788-bbbd43707b20
+                        name: Draft
+                        color: #0000FF
+                        creationDate: 
+                        modificationDate: 
+                        description: Draft files
+
+[INFO  ]: 2024-10-10_13-07-00-482+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c7edecbc-fa99-4917-9abf-bbdf608f4ad1
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                  name: Folder B
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder B description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    2: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  FolderFile: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      fileid: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                      File: 
+                        id: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                        name: File 4
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 4
+                        path: /folderB/file4.txt
+                        version: 1
+                        size: 256
+                  FolderTag: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      tagid: 2128e976-8170-43d1-ab60-db86e299a56c
+                      Tag: 
+                        id: 2128e976-8170-43d1-ab60-db86e299a56c
+                        name: Review
+                        color: #FFFF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Files under review
+
+[INFO  ]: 2024-10-10_13-07-00-498+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 51fa4330-ea23-4547-872a-bed5569c284c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-519+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bc91e4af-5b4c-4e07-bf56-9f3d47a0dbd7
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-529+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 9dff588b-c015-4d0c-a521-2758a70310f5
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-546+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 51fa4330-ea23-4547-872a-bed5569c284c
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 5bd2c513-a462-4061-97fc-e935db527514
+                  name: Folder A
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder A description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ChildFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ParentFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  FolderFile: 
+                    0: 
+                      folderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      fileid: 199a0dcd-8b1c-4b4d-a2b1-7867e1f13beb
+                      File: 
+                        id: 199a0dcd-8b1c-4b4d-a2b1-7867e1f13beb
+                        name: File 3
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 3
+                        path: /folderA/file3.txt
+                        version: 1
+                        size: 512
+                  FolderTag: 
+                    0: 
+                      folderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      tagid: 7571c5e8-5a7e-4121-a788-bbbd43707b20
+                      Tag: 
+                        id: 7571c5e8-5a7e-4121-a788-bbbd43707b20
+                        name: Draft
+                        color: #0000FF
+                        creationDate: 
+                        modificationDate: 
+                        description: Draft files
+
+[INFO  ]: 2024-10-10_13-07-00-563+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 12202b20-a5f0-4134-96f5-017d20f93800
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-579+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 9dff588b-c015-4d0c-a521-2758a70310f5
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                  name: Folder B
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder B description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    2: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  FolderFile: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      fileid: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                      File: 
+                        id: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                        name: File 4
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 4
+                        path: /folderB/file4.txt
+                        version: 1
+                        size: 256
+                  FolderTag: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      tagid: 2128e976-8170-43d1-ab60-db86e299a56c
+                      Tag: 
+                        id: 2128e976-8170-43d1-ab60-db86e299a56c
+                        name: Review
+                        color: #FFFF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Files under review
+
+[INFO  ]: 2024-10-10_13-07-00-613+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 12202b20-a5f0-4134-96f5-017d20f93800
+              statusCode: 200
+              response: 
+                folder: 
+                  id: a003e2c5-6551-4ce8-acb5-900371369631
+                  name: Folder D
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder D description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  FolderFile: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      fileid: e18c0adb-8033-49bb-a815-4d6379357ff7
+                      File: 
+                        id: e18c0adb-8033-49bb-a815-4d6379357ff7
+                        name: File 6
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 6
+                        path: /folderD/file6.txt
+                        version: 1
+                        size: 64
+                  FolderTag: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      tagid: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                      Tag: 
+                        id: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                        name: Personal
+                        color: #00FFFF
+                        creationDate: 
+                        modificationDate: 
+                        description: Personal files
+
+[INFO  ]: 2024-10-10_13-07-00-635+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: defd929c-7a7f-48fa-a0e0-7ac260fecf76
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-645+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 53c82a3f-0529-4cd7-80fa-bebadcecc133
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-678+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e716aa9e-94da-4a18-af66-86dff46d2857
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-689+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: defd929c-7a7f-48fa-a0e0-7ac260fecf76
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                  name: Folder B
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder B description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    2: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  FolderFile: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      fileid: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                      File: 
+                        id: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                        name: File 4
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 4
+                        path: /folderB/file4.txt
+                        version: 1
+                        size: 256
+                  FolderTag: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      tagid: 2128e976-8170-43d1-ab60-db86e299a56c
+                      Tag: 
+                        id: 2128e976-8170-43d1-ab60-db86e299a56c
+                        name: Review
+                        color: #FFFF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Files under review
+
+[INFO  ]: 2024-10-10_13-07-00-730+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 53c82a3f-0529-4cd7-80fa-bebadcecc133
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                  name: Folder B
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder B description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      childfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      ChildFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: f42474f8-3f9f-4cb5-b614-ae56b66d9851
+                        name: Sub Folder 1
+                        creationDate: 
+                        modificationDate: 
+                        description: This is a subfolder of root
+                    2: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ParentFolder: 
+                        id: a003e2c5-6551-4ce8-acb5-900371369631
+                        name: Folder D
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder D description
+                  FolderFile: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      fileid: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                      File: 
+                        id: ef15144f-5ef9-42cd-ae8a-b8759798453f
+                        name: File 4
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 4
+                        path: /folderB/file4.txt
+                        version: 1
+                        size: 256
+                  FolderTag: 
+                    0: 
+                      folderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      tagid: 2128e976-8170-43d1-ab60-db86e299a56c
+                      Tag: 
+                        id: 2128e976-8170-43d1-ab60-db86e299a56c
+                        name: Review
+                        color: #FFFF00
+                        creationDate: 
+                        modificationDate: 
+                        description: Files under review
+
+[INFO  ]: 2024-10-10_13-07-00-747+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e716aa9e-94da-4a18-af66-86dff46d2857
+              statusCode: 200
+              response: 
+                folder: 
+                  id: a003e2c5-6551-4ce8-acb5-900371369631
+                  name: Folder D
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder D description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  FolderFile: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      fileid: e18c0adb-8033-49bb-a815-4d6379357ff7
+                      File: 
+                        id: e18c0adb-8033-49bb-a815-4d6379357ff7
+                        name: File 6
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 6
+                        path: /folderD/file6.txt
+                        version: 1
+                        size: 64
+                  FolderTag: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      tagid: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                      Tag: 
+                        id: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                        name: Personal
+                        color: #00FFFF
+                        creationDate: 
+                        modificationDate: 
+                        description: Personal files
+
+[INFO  ]: 2024-10-10_13-07-00-769+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: df726c58-644e-4d30-bd08-429fa3bb5cd1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-826+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: df726c58-644e-4d30-bd08-429fa3bb5cd1
+              statusCode: 200
+              response: 
+                folder: 
+                  id: a003e2c5-6551-4ce8-acb5-900371369631
+                  name: Folder D
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder D description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  FolderFile: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      fileid: e18c0adb-8033-49bb-a815-4d6379357ff7
+                      File: 
+                        id: e18c0adb-8033-49bb-a815-4d6379357ff7
+                        name: File 6
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 6
+                        path: /folderD/file6.txt
+                        version: 1
+                        size: 64
+                  FolderTag: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      tagid: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                      Tag: 
+                        id: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                        name: Personal
+                        color: #00FFFF
+                        creationDate: 
+                        modificationDate: 
+                        description: Personal files
+
+[INFO  ]: 2024-10-10_13-07-00-845+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c0203b5c-c481-41ea-843d-16dd219f903e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-875+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c0203b5c-c481-41ea-843d-16dd219f903e
+              statusCode: 200
+              response: 
+                folder: 
+                  id: a003e2c5-6551-4ce8-acb5-900371369631
+                  name: Folder D
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder D description
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      childfolderid: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                      ChildFolder: 
+                        id: 156c9bd5-7f4e-4f7f-bc5c-3e62039393fe
+                        name: Folder B
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder B description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 5bd2c513-a462-4061-97fc-e935db527514
+                      childfolderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      ParentFolder: 
+                        id: 5bd2c513-a462-4061-97fc-e935db527514
+                        name: Folder A
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder A description
+                  FolderFile: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      fileid: e18c0adb-8033-49bb-a815-4d6379357ff7
+                      File: 
+                        id: e18c0adb-8033-49bb-a815-4d6379357ff7
+                        name: File 6
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 6
+                        path: /folderD/file6.txt
+                        version: 1
+                        size: 64
+                  FolderTag: 
+                    0: 
+                      folderid: a003e2c5-6551-4ce8-acb5-900371369631
+                      tagid: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                      Tag: 
+                        id: ef16b2d3-a85e-4c00-95ae-f94cbeccedec
+                        name: Personal
+                        color: #00FFFF
+                        creationDate: 
+                        modificationDate: 
+                        description: Personal files
+
+[INFO  ]: 2024-10-10_13-07-00-890+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: aa03a33d-1d23-4970-9875-428da3e5e129
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-915+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: fb082ece-9b39-40c9-b25d-addc157c0ba4
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-935+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: fb082ece-9b39-40c9-b25d-addc157c0ba4
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 5a87ab61-7915-49db-b16b-fd40f0468334
+                  name: Sub Folder 2
+                  creationDate: 
+                  modificationDate: 
+                  description: This is another subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ChildFolder: 
+                        id: 12289b1e-431d-4b8c-a297-1ac56656189b
+                        name: Folder C
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder C description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                  FolderTag: 
+
+[INFO  ]: 2024-10-10_13-07-00-968+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 937b85e2-ff01-46a8-af80-30c31a7aa05d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-976+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 3aa4681a-16ae-4b2b-9de7-7de0c9df590d
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-00-992+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 937b85e2-ff01-46a8-af80-30c31a7aa05d
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 5a87ab61-7915-49db-b16b-fd40f0468334
+                  name: Sub Folder 2
+                  creationDate: 
+                  modificationDate: 
+                  description: This is another subfolder of root
+                  ChildFolders: 
+                    0: 
+                      parentfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ChildFolder: 
+                        id: 12289b1e-431d-4b8c-a297-1ac56656189b
+                        name: Folder C
+                        creationDate: 
+                        modificationDate: 
+                        description: Folder C description
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                  FolderTag: 
+
+[INFO  ]: 2024-10-10_13-07-01-008+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 359f004e-88c4-4c13-8750-4798da9ccfd7
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-041+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 359f004e-88c4-4c13-8750-4798da9ccfd7
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 12289b1e-431d-4b8c-a297-1ac56656189b
+                  name: Folder C
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder C description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ParentFolder: 
+                        id: 5a87ab61-7915-49db-b16b-fd40f0468334
+                        name: Sub Folder 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is another subfolder of root
+                  FolderFile: 
+                    0: 
+                      folderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      fileid: 50b83428-e898-48cb-861a-a7d601e09215
+                      File: 
+                        id: 50b83428-e898-48cb-861a-a7d601e09215
+                        name: File 5
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 5
+                        path: /folderC/file5.txt
+                        version: 1
+                        size: 128
+                  FolderTag: 
+                    0: 
+                      folderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      tagid: c8807c60-4d9a-4874-aabc-518a53382adf
+                      Tag: 
+                        id: c8807c60-4d9a-4874-aabc-518a53382adf
+                        name: Final
+                        color: #FF00FF
+                        creationDate: 
+                        modificationDate: 
+                        description: Final version files
+
+[INFO  ]: 2024-10-10_13-07-01-066+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 5ebff023-29a4-46f8-bd15-c6bf59735d7f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-080+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 622418bc-4c82-4487-979d-6349c537ddcf
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-090+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 5ebff023-29a4-46f8-bd15-c6bf59735d7f
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 12289b1e-431d-4b8c-a297-1ac56656189b
+                  name: Folder C
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder C description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                    1: 
+                      parentfolderid: 5a87ab61-7915-49db-b16b-fd40f0468334
+                      childfolderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      ParentFolder: 
+                        id: 5a87ab61-7915-49db-b16b-fd40f0468334
+                        name: Sub Folder 2
+                        creationDate: 
+                        modificationDate: 
+                        description: This is another subfolder of root
+                  FolderFile: 
+                    0: 
+                      folderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      fileid: 50b83428-e898-48cb-861a-a7d601e09215
+                      File: 
+                        id: 50b83428-e898-48cb-861a-a7d601e09215
+                        name: File 5
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 5
+                        path: /folderC/file5.txt
+                        version: 1
+                        size: 128
+                  FolderTag: 
+                    0: 
+                      folderid: 12289b1e-431d-4b8c-a297-1ac56656189b
+                      tagid: c8807c60-4d9a-4874-aabc-518a53382adf
+                      Tag: 
+                        id: c8807c60-4d9a-4874-aabc-518a53382adf
+                        name: Final
+                        color: #FF00FF
+                        creationDate: 
+                        modificationDate: 
+                        description: Final version files
+
+[INFO  ]: 2024-10-10_13-07-01-112+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6d279319-7c2c-468a-9ada-1ae1a7cda873
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-139+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 6d279319-7c2c-468a-9ada-1ae1a7cda873
+              statusCode: 200
+              response: 
+                folder: 
+                  id: adb0be13-a9e1-4d49-be10-a42951a1d904
+                  name: Folder E
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder E description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      fileid: 3e7aebf0-129a-4ee8-a7b7-55be8ec0a5b5
+                      File: 
+                        id: 3e7aebf0-129a-4ee8-a7b7-55be8ec0a5b5
+                        name: File 7
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 7
+                        path: /folderE/file7.txt
+                        version: 1
+                        size: 32
+                  FolderTag: 
+                    0: 
+                      folderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      tagid: 76a4b046-ecac-42bb-8d92-3b8e3587222a
+                      Tag: 
+                        id: 76a4b046-ecac-42bb-8d92-3b8e3587222a
+                        name: Work
+                        color: #FFA500
+                        creationDate: 
+                        modificationDate: 
+                        description: Work-related files
+
+[INFO  ]: 2024-10-10_13-07-01-161+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ab6d1805-c6d4-45ef-a43e-6f1ff5293716
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-177+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 2bbc704b-a9ef-4052-9ad4-fa9e636b2438
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-184+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: ab6d1805-c6d4-45ef-a43e-6f1ff5293716
+              statusCode: 200
+              response: 
+                folder: 
+                  id: adb0be13-a9e1-4d49-be10-a42951a1d904
+                  name: Folder E
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder E description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      fileid: 3e7aebf0-129a-4ee8-a7b7-55be8ec0a5b5
+                      File: 
+                        id: 3e7aebf0-129a-4ee8-a7b7-55be8ec0a5b5
+                        name: File 7
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 7
+                        path: /folderE/file7.txt
+                        version: 1
+                        size: 32
+                  FolderTag: 
+                    0: 
+                      folderid: adb0be13-a9e1-4d49-be10-a42951a1d904
+                      tagid: 76a4b046-ecac-42bb-8d92-3b8e3587222a
+                      Tag: 
+                        id: 76a4b046-ecac-42bb-8d92-3b8e3587222a
+                        name: Work
+                        color: #FFA500
+                        creationDate: 
+                        modificationDate: 
+                        description: Work-related files
+
+[INFO  ]: 2024-10-10_13-07-01-206+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 05d02c43-10ba-4e3b-9f66-c923da882b79
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-225+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 05d02c43-10ba-4e3b-9f66-c923da882b79
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 136da036-bff9-4f91-8597-cc0823c38df7
+                  name: Folder F
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder F description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      fileid: b1ed2bdb-2250-4ee0-b626-d11387c2d9bc
+                      File: 
+                        id: b1ed2bdb-2250-4ee0-b626-d11387c2d9bc
+                        name: File 8
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 8
+                        path: /folderF/file8.txt
+                        version: 1
+                        size: 16
+                  FolderTag: 
+                    0: 
+                      folderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      tagid: d4323cd7-edf4-4b0e-9c89-d4f0296f7115
+                      Tag: 
+                        id: d4323cd7-edf4-4b0e-9c89-d4f0296f7115
+                        name: Urgent
+                        color: #800080
+                        creationDate: 
+                        modificationDate: 
+                        description: Urgent files
+
+[INFO  ]: 2024-10-10_13-07-01-238+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: efce0aa8-298f-4b77-940d-9c60c1d8807d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-252+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a891e9c5-afd2-432f-8da3-16951cafe17c
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-259+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: efce0aa8-298f-4b77-940d-9c60c1d8807d
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 136da036-bff9-4f91-8597-cc0823c38df7
+                  name: Folder F
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder F description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      fileid: b1ed2bdb-2250-4ee0-b626-d11387c2d9bc
+                      File: 
+                        id: b1ed2bdb-2250-4ee0-b626-d11387c2d9bc
+                        name: File 8
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 8
+                        path: /folderF/file8.txt
+                        version: 1
+                        size: 16
+                  FolderTag: 
+                    0: 
+                      folderid: 136da036-bff9-4f91-8597-cc0823c38df7
+                      tagid: d4323cd7-edf4-4b0e-9c89-d4f0296f7115
+                      Tag: 
+                        id: d4323cd7-edf4-4b0e-9c89-d4f0296f7115
+                        name: Urgent
+                        color: #800080
+                        creationDate: 
+                        modificationDate: 
+                        description: Urgent files
+
+[INFO  ]: 2024-10-10_13-07-01-281+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bc0493dd-6fc9-49bb-a49b-5887369eb022
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-301+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: bc0493dd-6fc9-49bb-a49b-5887369eb022
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                  name: Folder G
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder G description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      fileid: 9bc604aa-545a-4951-a304-48833cc127b3
+                      File: 
+                        id: 9bc604aa-545a-4951-a304-48833cc127b3
+                        name: File 9
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 9
+                        path: /folderG/file9.txt
+                        version: 1
+                        size: 8
+                  FolderTag: 
+                    0: 
+                      folderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      tagid: 72013a49-b14a-4c60-8bc8-350a5939cc29
+                      Tag: 
+                        id: 72013a49-b14a-4c60-8bc8-350a5939cc29
+                        name: Miscellaneous
+                        color: #808080
+                        creationDate: 
+                        modificationDate: 
+                        description: Miscellaneous files
+
+[INFO  ]: 2024-10-10_13-07-01-314+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0b9bf35d-202e-42fd-acad-7ad3290e6b5b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-10_13-07-01-354+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 0b9bf35d-202e-42fd-acad-7ad3290e6b5b
+              statusCode: 200
+              response: 
+                folder: 
+                  id: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                  name: Folder G
+                  creationDate: 
+                  modificationDate: 
+                  description: Folder G description
+                  ChildFolders: 
+                  ParentFolders: 
+                    0: 
+                      parentfolderid: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                      childfolderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      ParentFolder: 
+                        id: b0ec7c6c-af54-4511-bb75-0b2a19aebd54
+                        name: HOME
+                        creationDate: 
+                        modificationDate: 
+                        description: Home Folder has now got a new Description!
+                  FolderFile: 
+                    0: 
+                      folderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      fileid: 9bc604aa-545a-4951-a304-48833cc127b3
+                      File: 
+                        id: 9bc604aa-545a-4951-a304-48833cc127b3
+                        name: File 9
+                        creationDate: 
+                        modificationDate: 
+                        description: This is file 9
+                        path: /folderG/file9.txt
+                        version: 1
+                        size: 8
+                  FolderTag: 
+                    0: 
+                      folderid: 7c1cd2a4-76d3-4b4a-a454-78da065683f4
+                      tagid: 72013a49-b14a-4c60-8bc8-350a5939cc29
+                      Tag: 
+                        id: 72013a49-b14a-4c60-8bc8-350a5939cc29
+                        name: Miscellaneous
+                        color: #808080
+                        creationDate: 
+                        modificationDate: 
+                        description: Miscellaneous files

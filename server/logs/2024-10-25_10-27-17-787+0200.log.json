@@ -1,0 +1,1 @@
+[{"type":"system","timestamp":"2024-10-25T08:27:17.790Z","uuid":"56e51ea1-369b-408b-9ee3-5ca36d781b68","src":"server.ex.ts","msg":"Server running at http://127.0.0.1:3000/","data":{"running":"true","hostname":"127.0.0.1","port":3000}}]

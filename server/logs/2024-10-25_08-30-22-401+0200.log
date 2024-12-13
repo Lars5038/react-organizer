@@ -1,0 +1,4275 @@
+
+[SYSTEM]: 2024-10-25_08-30-22-403+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000
+
+[INFO  ]: 2024-10-25_08-41-30-449+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 1a77e1e5-f2b3-468f-bb67-44eae219b775
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-458+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e9cb3419-b5c4-4118-9947-6b390bb3cdd1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-553+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e9cb3419-b5c4-4118-9947-6b390bb3cdd1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-557+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: eb4ed466-bb37-4a8b-a89c-970a679dd6ff
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-571+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 242e8b39-8549-461c-ab83-34b1271c1a60
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-578+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: eb4ed466-bb37-4a8b-a89c-970a679dd6ff
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-583+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a7a1adc7-b128-44ec-9eab-405ee2041306
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-593+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4e337563-ac49-4628-a3b4-7001aa25bbd4
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-602+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a7a1adc7-b128-44ec-9eab-405ee2041306
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-610+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 590e225a-ac61-4f50-a7f1-dea3c02ba71a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-621+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4e337563-ac49-4628-a3b4-7001aa25bbd4
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-629+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 590e225a-ac61-4f50-a7f1-dea3c02ba71a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-633+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 7ab26fa3-3623-4980-a11a-a1ec6b165a40
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-648+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 5e4be2d6-e458-4d09-9aec-abef7d11f9b5
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-656+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 7ab26fa3-3623-4980-a11a-a1ec6b165a40
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-665+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 30c84b48-72fa-45ba-8d4b-f64ba06162d0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-673+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8a905486-c2ae-4937-bdf7-4a3fd2a4dc3b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-681+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 30c84b48-72fa-45ba-8d4b-f64ba06162d0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-692+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8a905486-c2ae-4937-bdf7-4a3fd2a4dc3b
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-697+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8f97a5d3-f4cf-4c8b-b938-a507326a0af0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-708+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: eaea2d9c-e333-4e4d-a804-ccdb5be25f05
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-721+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6490410c-c743-4985-9191-b2e83774c4ad
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-731+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8f97a5d3-f4cf-4c8b-b938-a507326a0af0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-742+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: eaea2d9c-e333-4e4d-a804-ccdb5be25f05
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-747+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 488e20e9-d320-4a2c-898a-9f555ffcf1a8
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-757+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6c3422ac-f8ae-4206-807e-d434fc059e67
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-766+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 488e20e9-d320-4a2c-898a-9f555ffcf1a8
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-779+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 6c3422ac-f8ae-4206-807e-d434fc059e67
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-783+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 1cd30d3c-f2ea-4602-957c-8eeefb91c202
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-797+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 2037b386-538d-46c8-9950-3802ec1dbb81
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-811+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 1cd30d3c-f2ea-4602-957c-8eeefb91c202
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-816+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ad21ef31-76d3-48c3-be2f-0ac85e1f2397
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-830+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 2037b386-538d-46c8-9950-3802ec1dbb81
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-836+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8a25b8d9-a874-46ba-8e9e-95eab1c50e61
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-850+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4ae19aab-144a-4f69-9de8-2c17acb55b39
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-861+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8a25b8d9-a874-46ba-8e9e-95eab1c50e61
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-877+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4ae19aab-144a-4f69-9de8-2c17acb55b39
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-886+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e9b9b881-8065-410f-8ea8-77331bf0e76e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-902+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 5e0e9d7b-9b58-45d1-915a-f4382c9edd40
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-909+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d2cd6ef9-9b94-4510-a057-fabc27f2735e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-918+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8c30df75-b125-43c5-9692-6869f568567a
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-930+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e9b9b881-8065-410f-8ea8-77331bf0e76e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-945+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 5e0e9d7b-9b58-45d1-915a-f4382c9edd40
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-956+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: d2cd6ef9-9b94-4510-a057-fabc27f2735e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-30-969+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 71afda55-6007-4469-a77e-79ee552bbe90
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-30-993+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 7c3b0de8-70e4-4d5b-a16b-5738a1420b71
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-000+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 9e01470d-2599-44b3-b82c-14c5655a6bf3
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-022+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 71afda55-6007-4469-a77e-79ee552bbe90
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-026+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 7c3b0de8-70e4-4d5b-a16b-5738a1420b71
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-037+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 9e01470d-2599-44b3-b82c-14c5655a6bf3
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-044+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a88bde82-4566-41d3-8632-0d31a26a6685
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-065+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a88bde82-4566-41d3-8632-0d31a26a6685
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-072+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: f8194e11-4df9-4748-97c2-da048eca02e0
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-079+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: dc2a68bd-57aa-4fb9-a9e7-21af7c8fc0a6
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-089+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a7c36557-e783-40e6-9abd-7966bb4122c6
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-096+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: dc2a68bd-57aa-4fb9-a9e7-21af7c8fc0a6
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-105+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a7c36557-e783-40e6-9abd-7966bb4122c6
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-107+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e75fb25c-3f7d-47a8-805e-d44f185dcbb1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-115+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 64cf5458-e06d-4b5e-b224-d007b914c6f1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-124+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e75fb25c-3f7d-47a8-805e-d44f185dcbb1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-131+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 64cf5458-e06d-4b5e-b224-d007b914c6f1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-139+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: acc5e690-048d-4771-89d9-912ef3de1ce9
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-146+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6a4aeeca-f8a1-4384-acd5-1571ae16e55f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-154+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 085ec6e4-53a9-4ab1-bdb7-879fd0da6823
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-161+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 6a4aeeca-f8a1-4384-acd5-1571ae16e55f
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-165+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 085ec6e4-53a9-4ab1-bdb7-879fd0da6823
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-172+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: af37c86b-f2fc-438d-9dc3-1feb90be9030
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-181+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: f8d66ab4-938f-46a5-a462-af0d1724970f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-188+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: af37c86b-f2fc-438d-9dc3-1feb90be9030
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-193+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: f8d66ab4-938f-46a5-a462-af0d1724970f
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-205+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 75532acc-5fb7-44f9-ad9c-5b5ad77d9e1c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-211+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: b8fd1752-21f6-49b8-bd00-8d9863b7561c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-218+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: aa32d4df-9dca-4944-b53c-2545f6b8856f
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-223+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 75532acc-5fb7-44f9-ad9c-5b5ad77d9e1c
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-236+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: b8fd1752-21f6-49b8-bd00-8d9863b7561c
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-240+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: cff4669f-64c4-49aa-8102-4df232d5945b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-247+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 290d01f6-5af9-4dba-8e77-d51a93f10b73
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-256+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: cff4669f-64c4-49aa-8102-4df232d5945b
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-263+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 290d01f6-5af9-4dba-8e77-d51a93f10b73
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-268+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c86f5954-fed9-4b13-bc61-e60ed927866b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-283+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c86f5954-fed9-4b13-bc61-e60ed927866b
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-286+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c88dd15d-b9df-4007-abf9-feb869ddb4db
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-294+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bf583357-5588-4543-a385-e316a5e32a1a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-301+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4edc0f5b-8508-4d1b-a7dc-2285375137db
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-349+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: bf583357-5588-4543-a385-e316a5e32a1a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-376+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4edc0f5b-8508-4d1b-a7dc-2285375137db
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-379+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 058a07ab-40ec-409f-b140-4c1c66c9f891
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-412+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: abd5f7bf-061e-4cf9-aa06-b0ececc13284
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-420+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 058a07ab-40ec-409f-b140-4c1c66c9f891
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-430+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: abd5f7bf-061e-4cf9-aa06-b0ececc13284
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-433+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 146f29f8-6af8-454c-a29b-a8500bc8cdc1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-445+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a812b6f1-020d-4106-9d5e-4591e57dab7b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-455+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 146f29f8-6af8-454c-a29b-a8500bc8cdc1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-466+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a812b6f1-020d-4106-9d5e-4591e57dab7b
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_08-41-31-508+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 5b31fbfb-aa44-429e-b29d-f5ac7c6bdeae
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_08-41-31-520+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 5b31fbfb-aa44-429e-b29d-f5ac7c6bdeae
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-271+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ea00f7ce-35d7-47b0-8a99-f281b7ab580e
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-288+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c92d657f-3f54-402d-9227-2a707885ef96
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-420+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c92d657f-3f54-402d-9227-2a707885ef96
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-449+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 39734c65-1b84-49b6-9245-19cc8cfb6898
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-466+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 39734c65-1b84-49b6-9245-19cc8cfb6898
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-474+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: df27708c-3700-4069-b97a-2a5c11e33a24
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-480+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0d0b6128-b8da-4e32-954e-39affc2e38b6
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-488+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: df27708c-3700-4069-b97a-2a5c11e33a24
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-495+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8cf7e576-7c9c-4f71-89bf-52c751d48b11
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-509+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6731bb8d-25bf-46e0-8617-f871c9164e5f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-517+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8cf7e576-7c9c-4f71-89bf-52c751d48b11
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-525+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 6731bb8d-25bf-46e0-8617-f871c9164e5f
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-530+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c433594d-c5e8-4bde-aa94-ec81244d3347
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-535+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 94c0b364-f876-4adf-a0d0-5dd2b12b8839
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-544+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 44233db9-3134-46db-8fa1-9cfe79a69b25
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-552+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c433594d-c5e8-4bde-aa94-ec81244d3347
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-573+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 44233db9-3134-46db-8fa1-9cfe79a69b25
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-583+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bf992a99-dfa7-48f7-91d5-b0caf736731a
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-600+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: b2bf6238-f643-4299-9ec5-62d4b1709b0d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-614+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ef2d064d-ab41-40f6-a586-725a00bcf86e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-622+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: b2bf6238-f643-4299-9ec5-62d4b1709b0d
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-649+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: ef2d064d-ab41-40f6-a586-725a00bcf86e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-656+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: da2c6c5c-e433-40a6-a372-cc1f15687f33
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-664+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 94c0b364-f876-4adf-a0d0-5dd2b12b8839
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-674+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: da2c6c5c-e433-40a6-a372-cc1f15687f33
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-684+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6a04d135-4778-4a61-84cd-fbc23289eafc
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-690+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c1972371-6459-4d97-aff4-e8e5c5106329
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-700+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 65b0fb43-6642-437b-bebb-2c9d72435d22
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-715+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c1972371-6459-4d97-aff4-e8e5c5106329
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-727+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 65b0fb43-6642-437b-bebb-2c9d72435d22
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-733+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 9795efe1-0a30-4a00-93de-66a5c7f082d9
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-749+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: f7b8b25b-b524-4af6-b42f-0c65ca6b70e0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-757+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: cc2d9ca0-3e2b-47a4-89ae-83f430979fca
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-769+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 9795efe1-0a30-4a00-93de-66a5c7f082d9
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-773+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e0727ce8-ba19-4c23-b730-235d089360a0
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-780+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: f7b8b25b-b524-4af6-b42f-0c65ca6b70e0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-789+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: cc2d9ca0-3e2b-47a4-89ae-83f430979fca
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-792+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d64141a6-15da-448e-9cde-a7aa6e06840e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-815+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 2f929ab0-a9fd-4b55-a846-cd2779deb138
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-832+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c1906ac5-f131-4869-9f95-b18175594717
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-842+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: d64141a6-15da-448e-9cde-a7aa6e06840e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-850+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 2f929ab0-a9fd-4b55-a846-cd2779deb138
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-875+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: c1906ac5-f131-4869-9f95-b18175594717
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-880+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 512845d4-dbb2-4a7c-b501-5627e82201da
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-913+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 3d68a937-6768-4fe8-a6ad-f14315450512
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-918+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 512845d4-dbb2-4a7c-b501-5627e82201da
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-929+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 55b01dd5-edff-4b3e-8631-7394bf20ec19
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-934+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: f3863d8c-c281-4379-9bd5-3084bb23ba20
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-948+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 55b01dd5-edff-4b3e-8631-7394bf20ec19
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-954+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: f3863d8c-c281-4379-9bd5-3084bb23ba20
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-961+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: beedfc6c-ee7f-4f23-9769-7c14bad6a0d6
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-968+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0bd7dfc1-2449-48be-a66d-917ad283629d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-23-996+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 0bd7dfc1-2449-48be-a66d-917ad283629d
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-23-992+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: beedfc6c-ee7f-4f23-9769-7c14bad6a0d6
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-023+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a07644eb-cae2-407f-8245-149762f78984
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-027+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0c12bac4-13bf-42ae-be64-1030ddede7fd
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-035+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d07803a5-4825-4348-b1ac-e40458e74dec
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-040+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a07644eb-cae2-407f-8245-149762f78984
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-049+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 0c12bac4-13bf-42ae-be64-1030ddede7fd
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-052+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 777099c5-6662-4333-83ba-d109e71bd01f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-068+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 777099c5-6662-4333-83ba-d109e71bd01f
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-081+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bc955c31-5c43-4f6b-ac81-1d6e2c7e4262
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-092+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 3a9f2370-1e45-43a5-99de-8de42044086b
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-098+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: bc955c31-5c43-4f6b-ac81-1d6e2c7e4262
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-108+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0273d8f8-ec19-4a56-ba39-f22da112e372
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-114+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: cc6d72f5-4856-4991-ba7d-2a93faf57794
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-125+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 0273d8f8-ec19-4a56-ba39-f22da112e372
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-140+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: cc6d72f5-4856-4991-ba7d-2a93faf57794
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-143+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 3091239b-a275-4ddc-af7f-7e209bb70dfd
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-156+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4d4937c9-58e8-4dcc-a1b7-779f6c627cd3
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-165+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e732f77b-11d6-47b3-97b5-69faf16190c5
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-171+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 3091239b-a275-4ddc-af7f-7e209bb70dfd
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-181+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4d4937c9-58e8-4dcc-a1b7-779f6c627cd3
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-185+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ed4a6eeb-5d9f-4f8f-b9b4-84f76d040418
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-200+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 67b434b5-2468-4e68-ab30-774ca6a5cb82
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-206+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: ed4a6eeb-5d9f-4f8f-b9b4-84f76d040418
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-224+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 67b434b5-2468-4e68-ab30-774ca6a5cb82
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-226+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: fe30aba1-c16d-4c84-b7c7-c7ed24378349
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-231+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: c0bd9481-f1f8-4451-84ee-34f35e435b87
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-245+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 975d6ad4-5383-4fe3-9c7b-37ba0a63bafd
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-250+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: fe30aba1-c16d-4c84-b7c7-c7ed24378349
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-256+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d1c146fd-d1a4-4db4-92ee-f2580d619a6c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-266+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 975d6ad4-5383-4fe3-9c7b-37ba0a63bafd
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-269+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0d0b3aa9-2a2f-4712-96ad-70ea5509097c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-282+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: d1c146fd-d1a4-4db4-92ee-f2580d619a6c
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-304+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 0d0b3aa9-2a2f-4712-96ad-70ea5509097c
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-307+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8dc20a3c-07e1-47af-8026-bf4e3df871fd
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-319+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: b0923cbd-835a-4c79-aa7f-74c6fb5e8820
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-334+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8dc20a3c-07e1-47af-8026-bf4e3df871fd
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-348+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: b0923cbd-835a-4c79-aa7f-74c6fb5e8820
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-350+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a1edc368-a32f-4898-8277-a7964605a1eb
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-364+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4b84a827-d7a8-4bad-858c-d342eb40a96c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-24-375+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a1edc368-a32f-4898-8277-a7964605a1eb
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-24-384+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4b84a827-d7a8-4bad-858c-d342eb40a96c
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-673+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 73b3cd2f-2546-420d-917c-b7aba7864840
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-683+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 937888a6-f58b-4726-9e2a-853987301735
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-709+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 937888a6-f58b-4726-9e2a-853987301735
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-717+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 895f99ad-25b1-4432-9a48-f2fb9adbe263
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-730+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 895f99ad-25b1-4432-9a48-f2fb9adbe263
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-742+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: dcb29916-ec19-454d-9906-6234428736eb
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-750+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: da8c46f4-912a-473e-9b05-6fc285efd052
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-761+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: dcb29916-ec19-454d-9906-6234428736eb
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-786+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: b3765f4e-7cb6-4b7d-bfba-e856fe2e5bc1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-794+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 51593c8d-ccd0-4c2c-8f3d-c6874e146cc0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-812+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: b3765f4e-7cb6-4b7d-bfba-e856fe2e5bc1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-826+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 51593c8d-ccd0-4c2c-8f3d-c6874e146cc0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-837+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 7813a60a-79de-487e-977c-3c0858b66ce0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-846+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 1600bb58-7cbd-41e7-9f0f-34e66b733105
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-879+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: fbc8e21d-c978-463f-aea8-d64c3dea1d75
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-892+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 7813a60a-79de-487e-977c-3c0858b66ce0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-900+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 1600bb58-7cbd-41e7-9f0f-34e66b733105
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-909+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 23cac049-33aa-4842-b94e-eb2da87c566c
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-916+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4e3fa40c-efa0-444f-8701-0226ab777f0b
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/f42474f8-3f9f-4cb5-b614-ae56b66d9851/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-930+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4628071a-afb7-4639-87a8-d04ed9a57b14
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/b0ec7c6c-af54-4511-bb75-0b2a19aebd54/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-935+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 23cac049-33aa-4842-b94e-eb2da87c566c
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-949+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4e3fa40c-efa0-444f-8701-0226ab777f0b
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-954+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 4628071a-afb7-4639-87a8-d04ed9a57b14
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-38-961+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8e90a7a8-4936-4f7a-ba3a-bde83abed299
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-38-998+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8e90a7a8-4936-4f7a-ba3a-bde83abed299
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-003+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bd5fe957-03fa-45c6-b27f-179e4f886435
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-018+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: cf1f0b9c-a32f-49c3-80c1-88dd5d38acad
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-032+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 686cfd8d-5fc9-47a6-8e0c-2551bc4b7e8a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-043+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: cf1f0b9c-a32f-49c3-80c1-88dd5d38acad
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-063+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: eda32e1c-61a7-4ec8-a28b-4da894285150
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/156c9bd5-7f4e-4f7f-bc5c-3e62039393fe/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-061+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 686cfd8d-5fc9-47a6-8e0c-2551bc4b7e8a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-075+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 36eb2ca7-99e0-4bf3-8a4f-0db5a1ddc5e6
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-088+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: eda32e1c-61a7-4ec8-a28b-4da894285150
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-094+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: cb0daf59-404e-4283-b619-5b927d3560e0
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-108+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 36eb2ca7-99e0-4bf3-8a4f-0db5a1ddc5e6
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-128+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d38d2cb2-9aa9-45d1-ab9e-0af036008c46
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-136+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: cc6d9c35-68e0-4990-a98f-1ee03c25c23e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-154+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: d38d2cb2-9aa9-45d1-ab9e-0af036008c46
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-194+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: cc6d9c35-68e0-4990-a98f-1ee03c25c23e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-247+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: d1dade4f-1cef-481b-8139-e0924c2ef9b1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-267+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e617169d-706b-486d-8c2c-a29d77ca485a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-277+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0b006b72-c11c-4a31-834e-179b2bb85580
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-289+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: d1dade4f-1cef-481b-8139-e0924c2ef9b1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-300+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e617169d-706b-486d-8c2c-a29d77ca485a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-334+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 695a2ce8-838f-4bbf-815b-bcdffc4e6f1e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-344+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 54a44a54-1071-4f49-9fcb-91041d332bf1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/a003e2c5-6551-4ce8-acb5-900371369631/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-427+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 50581e82-1d6a-4f09-9bfb-0bec5d332402
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5bd2c513-a462-4061-97fc-e935db527514/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-442+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 695a2ce8-838f-4bbf-815b-bcdffc4e6f1e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-450+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 54a44a54-1071-4f49-9fcb-91041d332bf1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-453+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 50581e82-1d6a-4f09-9bfb-0bec5d332402
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-481+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 7d85e708-f910-4be2-9476-06eb55df98eb
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-504+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e2bde197-eda0-45b0-b39d-94e5ce5bf2f6
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-527+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 7d85e708-f910-4be2-9476-06eb55df98eb
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-549+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a7fd9699-3001-4176-a54b-e17d1d4b8d5e
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-572+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 0f8fef83-8110-4e28-933d-303b293e6040
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-640+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a7fd9699-3001-4176-a54b-e17d1d4b8d5e
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-676+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 0f8fef83-8110-4e28-933d-303b293e6040
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-689+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ea2e0a3d-942d-404a-95d2-1d61d2851303
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-704+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 67535198-13b1-4802-954e-ad3e8820fc16
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-716+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 8a96ecac-56ab-4add-b1e3-f11ad6ab8ff0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/5a87ab61-7915-49db-b16b-fd40f0468334/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-734+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: de8210c0-5283-4a35-bdc7-166826ae1f2a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-797+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: ea2e0a3d-942d-404a-95d2-1d61d2851303
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-830+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 8a96ecac-56ab-4add-b1e3-f11ad6ab8ff0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-871+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: de8210c0-5283-4a35-bdc7-166826ae1f2a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-902+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 1e00f8bc-7612-46f0-8c34-5238cdb66041
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-934+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 68a5dd17-de00-4beb-b11b-7d94155bd11d
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-944+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 61bf9e88-aa68-408c-967b-166f490db313
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-39-991+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 1e00f8bc-7612-46f0-8c34-5238cdb66041
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-39-994+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 68a5dd17-de00-4beb-b11b-7d94155bd11d
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-010+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e0b30437-aa37-46ad-9913-e208e7a30bda
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-044+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 76e01f4c-8ce8-412b-b08c-24512596f6e6
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-038+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6be75d73-7711-4397-bde1-4d64022e048a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/12289b1e-431d-4b8c-a297-1ac56656189b/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-067+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e0b30437-aa37-46ad-9913-e208e7a30bda
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-069+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 6be75d73-7711-4397-bde1-4d64022e048a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-079+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 76e01f4c-8ce8-412b-b08c-24512596f6e6
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-109+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: e31214e4-89f6-4a3a-a8e0-41e5a5b11fe2
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-125+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a90f28ed-e986-4fa6-b9ca-984ea9f5764a
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/136da036-bff9-4f91-8597-cc0823c38df7/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-143+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 2afc5fec-bc6d-4619-a3db-99099f4772ae
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/adb0be13-a9e1-4d49-be10-a42951a1d904/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-181+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: e31214e4-89f6-4a3a-a8e0-41e5a5b11fe2
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-183+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: a90f28ed-e986-4fa6-b9ca-984ea9f5764a
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-193+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 2afc5fec-bc6d-4619-a3db-99099f4772ae
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-198+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 6d5d2458-b513-489f-9498-84269c3fb3c8
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: GET
+                  access-control-request-headers: content-type
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-219+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: bca75617-b1c9-4190-b185-6d3a42702b4f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-252+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: bca75617-b1c9-4190-b185-6d3a42702b4f
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-280+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 7c28923e-b1a6-4602-93f8-bbbb96e2903f
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-313+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 7c28923e-b1a6-4602-93f8-bbbb96e2903f
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-333+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ae19b8f8-f8b1-483f-919d-45d652e11fee
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-345+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: ae19b8f8-f8b1-483f-919d-45d652e11fee
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-352+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 56b3d0bd-6e41-4753-8de8-280acafe8cc0
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-379+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 56b3d0bd-6e41-4753-8de8-280acafe8cc0
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-385+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ec8b5a38-7381-446f-826f-81486abbeca1
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-405+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: ec8b5a38-7381-446f-826f-81486abbeca1
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-25-40-450+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 1d6b8d24-8fad-4d39-af6b-664108b7f915
+              request: 
+                method: GET
+                headers: 
+                  host: localhost:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  referer: http://localhost:90/
+                  content-type: application/json
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: same-site
+                  priority: u=4
+                url: /folders/7c1cd2a4-76d3-4b4a-a454-78da065683f4/self
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-25_10-25-40-472+02:00 self.e.ts: 
+          Ending GET request to /folder/[id]/self/ with response
+              id: 1d6b8d24-8fad-4d39-af6b-664108b7f915
+              statusCode: 200
+              response: Hiding response - Response [folder]
+
+[INFO  ]: 2024-10-25_10-26-02-782+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 897a855c-7a75-4971-a6a8-1457fac3009f
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: 127.0.0.1:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: POST
+                  access-control-request-headers: folder-description,folder-name
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: cross-site
+                  priority: u=4
+                url: /folder/create
+                httpVersion: 1.1

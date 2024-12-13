@@ -1,0 +1,798 @@
+
+[SYSTEM]: 2024-10-09_10-45-51-060+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000
+
+[INFO  ]: 2024-10-09_10-45-59-407+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              request: 
+                _events: 
+                  close: undefined
+                  error: undefined
+                  data: undefined
+                  end: undefined
+                  readable: undefined
+                _readableState: 
+                  highWaterMark: 16384
+                  buffer: 
+                  bufferIndex: 0
+                  length: 0
+                  pipes: 
+                  awaitDrainWriters: null
+                _maxListeners: undefined
+                socket: 
+                  connecting: false
+                  _hadError: false
+                  _parent: null
+                  _host: null
+                  _closeAfterHandlingError: false
+                  _events: 
+                    close: 
+                      0: function () { [native code] }
+                      1: function onServerResponseClose() {
+  // EventEmitter.emit makes a copy of the 'close' listeners array before
+  // calling the listeners. detachSocket() unregisters onServerResponseClose
+  // but if detachSocket() is called, directly or indirectly, by a 'close'
+  // listener, onServerResponseClose is still in that copy of the listeners
+  // array. That is, in the example below, b still gets called even though
+  // it's been removed by a:
+  //
+  //   const EventEmitter = require('events');
+  //   const obj = new EventEmitter();
+  //   obj.on('event', a);
+  //   obj.on('event', b);
+  //   function a() { obj.removeListener('event', b) }
+  //   function b() { throw "BAM!" }
+  //   obj.emit('event');  // throws
+  //
+  // Ergo, we need to deal with stale 'close' events and handle the case
+  // where the ServerResponse object has already been deconstructed.
+  // Fortunately, that requires only a single if check. :-)
+  if (this._httpMessage) {
+    emitCloseNT(this._httpMessage);
+  }
+}
+                    error: function socketOnError(e) {
+  // Ignore further errors
+  this.removeListener('error', socketOnError);
+
+  if (this.listenerCount('error', noop) === 0) {
+    this.on('error', noop);
+  } else {
+    warnUnclosedSocket();
+  }
+
+  if (!this.server.emit('clientError', e, this)) {
+    // Caution must be taken to avoid corrupting the remote peer.
+    // Reply an error segment if there is no in-flight `ServerResponse`,
+    // or no data of the in-flight one has been written yet to this socket.
+    if (this.writable &&
+        (!this._httpMessage || !this._httpMessage._headerSent)) {
+      let response;
+
+      switch (e.code) {
+        case 'HPE_HEADER_OVERFLOW':
+          response = requestHeaderFieldsTooLargeResponse;
+          break;
+        case 'HPE_CHUNK_EXTENSIONS_OVERFLOW':
+          response = requestChunkExtensionsTooLargeResponse;
+          break;
+        case 'ERR_HTTP_REQUEST_TIMEOUT':
+          response = requestTimeoutResponse;
+          break;
+        default:
+          response = badRequestResponse;
+          break;
+      }
+
+      this.write(response);
+    }
+    this.destroy(e);
+  }
+}
+                    prefinish: undefined
+                    finish: undefined
+                    drain: function () { [native code] }
+                    data: function () { [native code] }
+                    end: 
+                      0: function onReadableStreamEnd() {
+  if (!this.allowHalfOpen) {
+    this.write = writeAfterFIN;
+  }
+}
+                      1: function () { [native code] }
+                    readable: undefined
+                    timeout: function socketOnTimeout() {
+  const req = this.parser && this.parser.incoming;
+  const reqTimeout = req && !req.complete && req.emit('timeout', this);
+  const res = this._httpMessage;
+  const resTimeout = res && res.emit('timeout', this);
+  const serverTimeout = this.server.emit('timeout', this);
+
+  if (!reqTimeout && !resTimeout && !serverTimeout)
+    this.destroy();
+}
+                    resume: function onSocketResume() {
+  // It may seem that the socket is resumed, but this is an enemy's trick to
+  // deceive us! `resume` is emitted asynchronously, and may be called from
+  // `incoming.readStart()`. Stop the socket again here, just to preserve the
+  // state.
+  //
+  // We don't care about stream semantics for the consumed socket anyway.
+  if (this._paused) {
+    this.pause();
+    return;
+  }
+
+  if (this._handle && !this._handle.reading) {
+    this._handle.reading = true;
+    this._handle.readStart();
+  }
+}
+                    pause: function onSocketPause() {
+  if (this._handle && this._handle.reading) {
+    this._handle.reading = false;
+    this._handle.readStop();
+  }
+}
+                  _readableState: 
+                    highWaterMark: 16384
+                    buffer: 
+                    bufferIndex: 0
+                    length: 0
+                    pipes: 
+                    awaitDrainWriters: null
+                  _writableState: 
+                    highWaterMark: 16384
+                    length: 0
+                    corked: 0
+                    onwrite: function () { [native code] }
+                    writelen: 0
+                    bufferedIndex: 0
+                    pendingcb: 0
+                  allowHalfOpen: true
+                  _maxListeners: undefined
+                  _eventsCount: 8
+                  _sockname: null
+                  _pendingData: null
+                  _pendingEncoding: 
+                  server: 
+                    maxHeaderSize: undefined
+                    insecureHTTPParser: undefined
+                    requestTimeout: 300000
+                    headersTimeout: 60000
+                    keepAliveTimeout: 5000
+                    connectionsCheckingInterval: 30000
+                    requireHostHeader: true
+                    joinDuplicateHeaders: undefined
+                    rejectNonStandardBodyWrites: false
+                    _events: 
+                      request: function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var body, chunks, reqId;
+    return __generator(this, function (_a) {
+        body = "";
+        chunks = [];
+        reqId = (0, uuid_1.v4)();
+        statics_1.default.log.info({
+            src: "SERVER (server.ex.ts)",
+            msg: "Incoming request",
+            data: {
+                request: req
+            }
+        });
+        req.on("data", function (chunk) {
+            body += chunk.toString();
+            chunks.push(chunk);
+        });
+        req.on("end", function () { return __awaiter(void 0, void 0, void 0, function () {
+            var authenticateModule_1, authenticated, fileModule_1, authenticated, folders__id__selfModule_1, authenticated, getModule_1, authenticated, _id__runModule_1, authenticated, execute_lsModule_1, authenticated, executeModule_1, authenticated, uploadModule_1, authenticated, folders__id__modifyModule_1, authenticated, error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        res.setHeader("Access-Control-Allow-Origin", "*"); // Update with your frontend URL
+                        res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, UPDATE");
+                        res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, X-File-Path");
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 25, , 26]);
+                        // Handle preflight requests (OPTIONS)
+                        if (req.method === "OPTIONS") {
+                            res.writeHead(204); // No Content
+                            res.end();
+                            return [2 /*return*/];
+                        }
+                        if (!(req.method === "GET")) return [3 /*break*/, 12];
+                        if (!(getParamValuesFromUrl(req.url, "/authenticate") != null)) return [3 /*break*/, 3];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/GET/authenticate.e.js"); })];
+                    case 2:
+                        authenticateModule_1 = _a.sent();
+                        if (authenticateModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(authenticateModule_1.execute &&
+                                                typeof authenticateModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/authenticate");
+                                            return [4 /*yield*/, authenticateModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, authenticateModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 12];
+                    case 3:
+                        if (!(getParamValuesFromUrl(req.url, "/file") != null)) return [3 /*break*/, 5];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/GET/file.e.js"); })];
+                    case 4:
+                        fileModule_1 = _a.sent();
+                        if (fileModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(fileModule_1.execute &&
+                                                typeof fileModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/file");
+                                            return [4 /*yield*/, fileModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, fileModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 12];
+                    case 5:
+                        if (!(getParamValuesFromUrl(req.url, "/folders/[id]/self") != null)) return [3 /*break*/, 7];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/GET/folders/[id]/self.e.js"); })];
+                    case 6:
+                        folders__id__selfModule_1 = _a.sent();
+                        if (folders__id__selfModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(folders__id__selfModule_1.execute &&
+                                                typeof folders__id__selfModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/folders/[id]/self");
+                                            return [4 /*yield*/, folders__id__selfModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, folders__id__selfModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 12];
+                    case 7:
+                        if (!(getParamValuesFromUrl(req.url, "/get") != null)) return [3 /*break*/, 9];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/GET/get.e.js"); })];
+                    case 8:
+                        getModule_1 = _a.sent();
+                        if (getModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(getModule_1.execute &&
+                                                typeof getModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/get");
+                                            return [4 /*yield*/, getModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, getModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 12];
+                    case 9:
+                        if (!(getParamValuesFromUrl(req.url, "/[id]/run") != null)) return [3 /*break*/, 11];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/GET/[id]/run.e.js"); })];
+                    case 10:
+                        _id__runModule_1 = _a.sent();
+                        if (_id__runModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(_id__runModule_1.execute &&
+                                                typeof _id__runModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/[id]/run");
+                                            return [4 /*yield*/, _id__runModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, _id__runModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 12];
+                    case 11:
+                        res.statusCode = 404;
+                        res.end(JSON.stringify({ message: 'Not Found' }));
+                        return [2 /*return*/];
+                    case 12:
+                        if (!(req.method === "POST")) return [3 /*break*/, 19];
+                        if (!(getParamValuesFromUrl(req.url, "/execute/ls") != null)) return [3 /*break*/, 14];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/POST/execute/ls.e.js"); })];
+                    case 13:
+                        execute_lsModule_1 = _a.sent();
+                        if (execute_lsModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(execute_lsModule_1.execute &&
+                                                typeof execute_lsModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/execute/ls");
+                                            return [4 /*yield*/, execute_lsModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, execute_lsModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 19];
+                    case 14:
+                        if (!(getParamValuesFromUrl(req.url, "/execute") != null)) return [3 /*break*/, 16];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/POST/execute.e.js"); })];
+                    case 15:
+                        executeModule_1 = _a.sent();
+                        if (executeModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(executeModule_1.execute &&
+                                                typeof executeModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/execute");
+                                            return [4 /*yield*/, executeModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, executeModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 19];
+                    case 16:
+                        if (!(getParamValuesFromUrl(req.url, "/upload") != null)) return [3 /*break*/, 18];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/POST/upload.e.js"); })];
+                    case 17:
+                        uploadModule_1 = _a.sent();
+                        if (uploadModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(uploadModule_1.execute &&
+                                                typeof uploadModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/upload");
+                                            return [4 /*yield*/, uploadModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, uploadModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 19];
+                    case 18:
+                        res.statusCode = 404;
+                        res.end(JSON.stringify({ message: 'Not Found' }));
+                        return [2 /*return*/];
+                    case 19:
+                        if (!(req.method === "PUT")) return [3 /*break*/, 23];
+                        if (!(getParamValuesFromUrl(req.url, "/folders/[id]/modify") != null)) return [3 /*break*/, 21];
+                        return [4 /*yield*/, Promise.resolve().then(function () { return require("./endpoints/PUT/folders/[id]/modify.e.js"); })];
+                    case 20:
+                        folders__id__modifyModule_1 = _a.sent();
+                        if (folders__id__modifyModule_1.options) {
+                            authenticated = (0, auth_1.authenticate)(req, res, function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var params, ret;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0:
+                                            if (!(folders__id__modifyModule_1.execute &&
+                                                typeof folders__id__modifyModule_1.execute === "function")) return [3 /*break*/, 2];
+                                            params = getParamValuesFromUrl(req.url, "/folders/[id]/modify");
+                                            return [4 /*yield*/, folders__id__modifyModule_1.execute(req, res, body, chunks, params)];
+                                        case 1:
+                                            ret = _a.sent();
+                                            if (ret)
+                                                return [2 /*return*/];
+                                            _a.label = 2;
+                                        case 2: return [2 /*return*/];
+                                    }
+                                });
+                            }); }, folders__id__modifyModule_1.options.permissions);
+                            return [2 /*return*/];
+                        }
+                        return [3 /*break*/, 22];
+                    case 21:
+                        res.statusCode = 404;
+                        res.end(JSON.stringify({ message: 'Not Found' }));
+                        return [2 /*return*/];
+                    case 22: return [3 /*break*/, 24];
+                    case 23:
+                        res.statusCode = 404;
+                        res.end(JSON.stringify({ message: 'Not Found' }));
+                        return [2 /*return*/];
+                    case 24: return [3 /*break*/, 26];
+                    case 25:
+                        error_1 = _a.sent();
+                        res.end(JSON.stringify({
+                            message: "An unknown error occurred whilst trying to execute endpoint!",
+                            error: error_1,
+                        }));
+                        return [3 /*break*/, 26];
+                    case 26: return [2 /*return*/];
+                }
+            });
+        }); });
+        return [2 /*return*/];
+    });
+}); }
+                      connection: function connectionListener(socket) {
+  defaultTriggerAsyncIdScope(
+    getOrSetAsyncId(socket), connectionListenerInternal, this, socket,
+  );
+}
+                      listening: function setupConnectionsTracking() {
+  // Start connection handling
+  if (!this[kConnections]) {
+    this[kConnections] = new ConnectionsList();
+  }
+
+  // This checker is started without checking whether any headersTimeout or requestTimeout is non zero
+  // otherwise it would not be started if such timeouts are modified after createServer.
+  this[kConnectionsCheckingInterval] =
+    setInterval(checkConnections.bind(this), this.connectionsCheckingInterval).unref();
+}
+                    _eventsCount: 3
+                    _maxListeners: undefined
+                    _connections: 1
+                    _handle: 
+                      reading: false
+                      onconnection: function onconnection(err, clientHandle) {
+  const handle = this;
+  const self = handle[owner_symbol];
+
+  debug('onconnection');
+
+  if (err) {
+    self.emit('error', errnoException(err, 'accept'));
+    return;
+  }
+
+  if (self.maxConnections && self._connections >= self.maxConnections) {
+    if (clientHandle.getsockname || clientHandle.getpeername) {
+      const data = { __proto__: null };
+      if (clientHandle.getsockname) {
+        const localInfo = { __proto__: null };
+        clientHandle.getsockname(localInfo);
+        data.localAddress = localInfo.address;
+        data.localPort = localInfo.port;
+        data.localFamily = localInfo.family;
+      }
+      if (clientHandle.getpeername) {
+        const remoteInfo = { __proto__: null };
+        clientHandle.getpeername(remoteInfo);
+        data.remoteAddress = remoteInfo.address;
+        data.remotePort = remoteInfo.port;
+        data.remoteFamily = remoteInfo.family;
+      }
+      self.emit('drop', data);
+    } else {
+      self.emit('drop');
+    }
+    clientHandle.close();
+    return;
+  }
+
+  const socket = new Socket({
+    handle: clientHandle,
+    allowHalfOpen: self.allowHalfOpen,
+    pauseOnCreate: self.pauseOnConnect,
+    readable: true,
+    writable: true,
+    readableHighWaterMark: self.highWaterMark,
+    writableHighWaterMark: self.highWaterMark,
+  });
+
+  if (self.noDelay && clientHandle.setNoDelay) {
+    socket[kSetNoDelay] = true;
+    clientHandle.setNoDelay(true);
+  }
+  if (self.keepAlive && clientHandle.setKeepAlive) {
+    socket[kSetKeepAlive] = true;
+    socket[kSetKeepAliveInitialDelay] = self.keepAliveInitialDelay;
+    clientHandle.setKeepAlive(true, self.keepAliveInitialDelay);
+  }
+
+  self._connections++;
+  socket.server = self;
+  socket._server = self;
+  self.emit('connection', socket);
+  if (netServerSocketChannel.hasSubscribers) {
+    netServerSocketChannel.publish({
+      socket,
+    });
+  }
+}
+                    _usingWorkers: false
+                    _workers: 
+                    _unref: false
+                    allowHalfOpen: true
+                    pauseOnConnect: false
+                    noDelay: true
+                    keepAlive: false
+                    keepAliveInitialDelay: 0
+                    highWaterMark: 16384
+                    httpAllowHalfOpen: false
+                    timeout: 0
+                    maxHeadersCount: null
+                    maxRequestsPerSocket: 0
+                    _connectionKey: 4:127.0.0.1:3000
+                  _server:                     [Circular Reference]
+                  parser: 
+                    0: null
+                    1: function parserOnHeaders(headers, url) {
+  // Once we exceeded headers limit - stop collecting them
+  if (this.maxHeaderPairs <= 0 ||
+      this._headers.length < this.maxHeaderPairs) {
+    this._headers.push(...headers);
+  }
+  this._url += url;
+}
+                    2: function parserOnHeadersComplete(versionMajor, versionMinor, headers, method,
+                                 url, statusCode, statusMessage, upgrade,
+                                 shouldKeepAlive) {
+  const parser = this;
+  const { socket } = parser;
+
+  if (headers === undefined) {
+    headers = parser._headers;
+    parser._headers = [];
+  }
+
+  if (url === undefined) {
+    url = parser._url;
+    parser._url = '';
+  }
+
+  // Parser is also used by http client
+  const ParserIncomingMessage = (socket && socket.server &&
+                                 socket.server[kIncomingMessage]) ||
+                                 IncomingMessage;
+
+  const incoming = parser.incoming = new ParserIncomingMessage(socket);
+  incoming.httpVersionMajor = versionMajor;
+  incoming.httpVersionMinor = versionMinor;
+  incoming.httpVersion = `${versionMajor}.${versionMinor}`;
+  incoming.joinDuplicateHeaders = socket?.server?.joinDuplicateHeaders ||
+                                  parser.joinDuplicateHeaders;
+  incoming.url = url;
+  incoming.upgrade = upgrade;
+
+  let n = headers.length;
+
+  // If parser.maxHeaderPairs <= 0 assume that there's no limit.
+  if (parser.maxHeaderPairs > 0)
+    n = MathMin(n, parser.maxHeaderPairs);
+
+  incoming._addHeaderLines(headers, n);
+
+  if (typeof method === 'number') {
+    // server only
+    incoming.method = methods[method];
+  } else {
+    // client only
+    incoming.statusCode = statusCode;
+    incoming.statusMessage = statusMessage;
+  }
+
+  return parser.onIncoming(incoming, shouldKeepAlive);
+}
+                    3: function parserOnBody(b) {
+  const stream = this.incoming;
+
+  // If the stream has already been removed, then drop it.
+  if (stream === null)
+    return;
+
+  // Pretend this was the result of a stream._read call.
+  if (!stream._dumped) {
+    const ret = stream.push(b);
+    if (!ret)
+      readStop(this.socket);
+  }
+}
+                    4: function parserOnMessageComplete() {
+  const parser = this;
+  const stream = parser.incoming;
+
+  if (stream !== null) {
+    stream.complete = true;
+    // Emit any trailing headers.
+    const headers = parser._headers;
+    if (headers.length) {
+      stream._addHeaderLines(headers, headers.length);
+      parser._headers = [];
+      parser._url = '';
+    }
+
+    // For emit end event
+    stream.push(null);
+  }
+
+  // Force to read the next incoming message
+  readStart(parser.socket);
+}
+                    5: function () { [native code] }
+                    6: function () { [native code] }
+                    _headers: 
+                    _url: 
+                    socket:                       [Circular Reference]
+                    incoming:                       [Circular Reference]
+                    outgoing: null
+                    maxHeaderPairs: 2000
+                    _consumed: true
+                    onIncoming: function () { [native code] }
+                    joinDuplicateHeaders: null
+                  on: function socketListenerWrap(ev, fn) {
+    const res = net.Socket.prototype[originalFnName].call(this,
+                                                          ev, fn);
+    if (!this.parser) {
+      this.on = net.Socket.prototype.on;
+      this.addListener = net.Socket.prototype.addListener;
+      this.prependListener = net.Socket.prototype.prependListener;
+      return res;
+    }
+
+    if (ev === 'data' || ev === 'readable')
+      unconsume(this.parser, this);
+
+    return res;
+  }
+                  addListener: function socketListenerWrap(ev, fn) {
+    const res = net.Socket.prototype[originalFnName].call(this,
+                                                          ev, fn);
+    if (!this.parser) {
+      this.on = net.Socket.prototype.on;
+      this.addListener = net.Socket.prototype.addListener;
+      this.prependListener = net.Socket.prototype.prependListener;
+      return res;
+    }
+
+    if (ev === 'data' || ev === 'readable')
+      unconsume(this.parser, this);
+
+    return res;
+  }
+                  prependListener: function socketListenerWrap(ev, fn) {
+    const res = net.Socket.prototype[originalFnName].call(this,
+                                                          ev, fn);
+    if (!this.parser) {
+      this.on = net.Socket.prototype.on;
+      this.addListener = net.Socket.prototype.addListener;
+      this.prependListener = net.Socket.prototype.prependListener;
+      return res;
+    }
+
+    if (ev === 'data' || ev === 'readable')
+      unconsume(this.parser, this);
+
+    return res;
+  }
+                  setEncoding: function socketSetEncoding() {
+  throw new ERR_HTTP_SOCKET_ENCODING();
+}
+                  _paused: false
+                  _httpMessage: 
+                    _events: 
+                      finish: function () { [native code] }
+                    _eventsCount: 1
+                    _maxListeners: undefined
+                    outputData: 
+                    outputSize: 0
+                    writable: true
+                    destroyed: false
+                    _last: false
+                    chunkedEncoding: false
+                    shouldKeepAlive: true
+                    maxRequestsOnConnectionReached: false
+                    _defaultKeepAlive: true
+                    useChunkedEncodingByDefault: true
+                    sendDate: true
+                    _removedConnection: false
+                    _removedContLen: false
+                    _removedTE: false
+                    strictContentLength: false
+                    _contentLength: null
+                    _hasBody: true
+                    _trailer: 
+                    finished: false
+                    _headerSent: false
+                    _closed: false
+                    socket:                       [Circular Reference]
+                    _header: null
+                    _keepAliveTimeout: 5000
+                    _onPendingData: function () { [native code] }
+                    req:                       [Circular Reference]
+                    _sent100: false
+                    _expect_continue: false
+                    _maxRequestsPerSocket: 0
+                httpVersionMajor: 1
+                httpVersionMinor: 1
+                httpVersion: 1.1
+                complete: false
+                rawHeaders: 
+                  0: Host
+                  1: 127.0.0.1:3000
+                  2: Content-Type
+                  3: application/json
+                  4: User-Agent
+                  5: Insomnia/2023.5.6
+                  6: Accept
+                  7: */*
+                  8: Content-Length
+                  9: 2
+                rawTrailers: 
+                joinDuplicateHeaders: null
+                aborted: false
+                upgrade: false
+                url: /1yy2jh3asd/run
+                method: GET
+                statusCode: null
+                statusMessage: null
+                client:                   [Circular Reference]
+                _consuming: false
+                _dumped: false

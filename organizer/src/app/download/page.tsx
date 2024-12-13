@@ -16,7 +16,7 @@ const FileDownloader = () => {
       }
     }, []);
   
-    const downloadFile = async (filePath) => {
+    const downloadFile = async (filePath: string) => {
       try {
         const response = await axios.get('http://localhost:3000/file', {
           headers: {

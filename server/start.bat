@@ -1,1 +1,1 @@
-tsc server.ts && tsc auth.ts && tsc statics.ts && tsc ./endpoints/GET/authenticate.e.ts && tsc ./endpoints/GET/file.e.ts && tsc ./endpoints/GET/folders/[id]/self.e.ts && tsc ./endpoints/GET/get.e.ts && tsc ./endpoints/GET/[id]/run.e.ts && tsc ./endpoints/POST/execute/ls.e.ts && tsc ./endpoints/POST/execute.e.ts && tsc ./endpoints/POST/upload.e.ts && node server.js
+tsc server.ts && tsc statics.ts && tsc mime.ts && tsc logger.ts && tsc auth.ts && node server.js

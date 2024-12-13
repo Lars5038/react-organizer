@@ -1,25 +1,27 @@
 import { IncomingMessage, ServerResponse } from "http";
 import * as fs from "fs";
 import { EndpointOptions } from "../../types";
+import Global from "../../statics";
 
 export const options: EndpointOptions = {
-  permissions: ["upload"]
-}
+  permissions: ["upload"],
+};
 
 export const execute = async (
   req: IncomingMessage,
   res: ServerResponse,
-  body: string, chunks: Buffer[], params: Record<string, string>
+  body: string,
+  chunks: Buffer[],
+  params: Record<string, string>,
+  reqId: string
 ): Promise<boolean> => {
-
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
-
   if (!req.headers["content-type"]) {
     res.writeHead(400, { "Content-Type": "text/json" });
-    res.end(JSON.stringify({'msg': "Invalid request: mission contenttype"}));
+    res.end(JSON.stringify({ msg: "Invalid request: mission contenttype" }));
     return true;
   }
 
@@ -32,7 +34,7 @@ export const execute = async (
   const filenameMatch = headerPart.match(/filename="([^"]+)"/);
   if (!filenameMatch) {
     res.writeHead(400, { "Content-Type": "text/json" });
-    res.end(JSON.stringify({'msg': "Invalid request: Filename not found."}));
+    res.end(JSON.stringify({ msg: "Invalid request: Filename not found." }));
     return true;
   }
 
@@ -44,7 +46,17 @@ export const execute = async (
 
   if (start === -1 || end === -1) {
     res.writeHead(400, { "Content-Type": "text/json" });
-    res.end(JSON.stringify({'msg': "Invalid request: Data not found."}));
+    let response = { msg: "Invalid request: Data not found." };
+    res.end(JSON.stringify(response));
+    Global.log.info({
+      src: "upload.e.ts",
+      msg: "Ending POST request to /upload/ with response",
+      data: {
+        id: reqId,
+        statusCode: res.statusCode,
+        response: response,
+      },
+    });
     return true;
   }
 
@@ -60,14 +72,38 @@ export const execute = async (
   // Save the data to a file
   fs.writeFile(filePath, fileData, (err) => {
     if (err) {
-      console.error("Failed to save file:", err);
       res.writeHead(500, { "Content-Type": "text/json" });
-      res.end(JSON.stringify({'msg': "Failed to save file."}));
+      let response = { msg: "Failed to save file." };
+      res.end(JSON.stringify(response));
+      Global.log.info({
+        src: "upload.e.ts",
+        msg: "Ending POST request to /upload/ with response",
+        data: {
+          id: reqId,
+          statusCode: res.statusCode,
+          response: response,
+        },
+      });
+      Global.log.error({
+        src: "upload.e.ts",
+        msg: "Failed to save file:",
+        data: { error: err },
+      });
       return true;
     }
 
     res.writeHead(200, { "Content-Type": "text/json" });
-    res.end(JSON.stringify({'msg': "File uploaded successfully."}));
+    let response = { msg: "File uploaded successfully." };
+    res.end(JSON.stringify(response));
+    Global.log.info({
+      src: "upload.e.ts",
+      msg: "Ending POST request to /upload/ with response",
+      data: {
+        id: reqId,
+        statusCode: res.statusCode, 
+        response: response
+      },
+    })
     return true;
   });
 

@@ -1,7 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
-import { DownArrowIcon, FolderIcon } from "./Icons";
+import { DownArrowIcon, FolderIcon, FolderOutlineIcon } from "./Icons";
 import Link from "next/link";
 import { FILE, FILE_Skel } from "./File";
+import Popup from "reactjs-popup";
+import { useState } from "react";
 
 // Enums and types
 export enum FolderState {
@@ -50,6 +52,10 @@ export class FolderPool {
   static poolCount = 0;
   static fetchCount = 0;
 
+  static async rem(id: string) {
+    this.pool.delete(id);
+  }
+
   static async get(id: string) {
     let f = this.pool.get(id);
     if (f != undefined) {
@@ -75,6 +81,12 @@ export class FolderPool {
       const folderResp = await response.json();
       let folder = convertAPIFolder(folderResp);
       this.pool.set(folder.id, folder);
+      let f = await this.pool.get(folder.id);
+      if (f) {
+        // console.log("Before: " + f.size);
+        f.size = await calculateFolderSize(f);
+        // console.log("After : " + f.size);
+      }
       return folder;
     } catch (err: any) {
       console.error("Error fetching folders:", err);
@@ -116,6 +128,43 @@ export const toggleFolderOpen = (id: string, folders: FLDR[]): FLDR[] => {
   return updateFolderOpenState(folders);
 };
 
+async function calculateFolderSize(folder: FLDR, parents?: string[]) {
+  let size = 0;
+
+  // Initialize parents array if not provided
+  if (!parents) parents = [folder.name];
+
+  // console.log(`Calculating size for folder: ${folder.name}, skipping parents: ${parents.join(", ")}`);
+
+  for (let i = 0; i < folder.children.length; i++) {
+    let child = folder.children[i];
+
+    // Prevent processing if child is already in the current path (cycle detection)
+    if (parents.includes(child.name)) {
+      // console.log(`Skipping child: ${child.name} due to cycle detection.`);
+      continue;
+    }
+
+    let childFolder = await FolderPool.get(child.id);
+
+    const childSize = await calculateFolderSize(childFolder, [
+      ...parents,
+      child.name,
+    ]);
+    // console.log(`Adding size from child folder: ${child.name}, size: ${childSize}`);
+    size += childSize;
+  }
+
+  // Add the size of all files in the current folder
+  folder.files.forEach((file) => {
+    // console.log(`Adding size from file: ${file.name}, size: ${file.size}`);
+    size += file.size;
+  });
+
+  // console.log(`Total size for folder: ${folder.name} is ${size}`);
+  return size;
+}
+
 export const fetchChildFolders = async (
   id: string,
   fid: string,
@@ -129,31 +178,25 @@ export const fetchChildFolders = async (
 
     const updateFolders = (parent: FLDR, fid: string): FLDR => {
       if (parent.fid === fid) {
-        let parentSize = 0;
-        childFolders.forEach((child) => {
-          parentSize += child.size;
-        });
         return {
           ...parent,
           open:
             parent.open === FolderState.UNKNOWN
               ? FolderState.FETCHED
               : parent.open,
-          children: childFolders.map((child: any) => ({
+          children: childFolders.map((child) => ({
             id: child.id,
             fid: uuidv4(),
             name: child.name,
             creationDate: new Date(child.creationDate),
             modificationDate: new Date(child.modificationDate),
             description: child.description,
-            path: child.path,
             open: FolderState.UNKNOWN,
             children: [],
             files: [],
             parents: [parent],
             size: -1,
           })),
-          size: parentSize,
         };
       } else if (parent.children.length > 0) {
         parent.children = parent.children.map((child) =>
@@ -362,18 +405,95 @@ export function GalleryFolder({
   return (
     <Link
       href={createFolderLink(folder.id)}
-      className="w-32 h-auto flex flex-col group"
+      className="w-32 h-32 flex flex-col group p-3 rounded-2xl hover:bg-gray-100 hover:bg-opacity-5"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <FolderIcon
         className={
-          "w-full text-center fill-yellow-600 pr-1 group-hover:fill-yellow-400"
+          "w-full text-center fill-yellow-600 group-hover:fill-yellow-400"
         }
       ></FolderIcon>
       <p className="w-full text-center text-gray-300 group-hover:text-gray-100">
         {folder.name}
       </p>
     </Link>
+  );
+}
+
+export function CreateFolder({ parentId, setFolders, setFolder }: { parentId: string, setFolders: Function, setFolder: Function }) {
+  let [name, setName] = useState("");
+  let [desc, setDesc] = useState("");
+
+  return (
+    <Popup
+      trigger={
+        <button className="w-32 h-32 flex flex-col items-center justify-evenly group p-3 rounded-2xl outline-1 outline-dashed outline-gray-200 hover:bg-gray-100 hover:bg-opacity-5">
+          <FolderOutlineIcon
+            className={
+              "w-1/2 text-center stroke-gray-600 group-hover:stroke-gray-400"
+            }
+          ></FolderOutlineIcon>
+          <p className="w-full text-center text-gray-300 group-hover:text-gray-100">
+            Add Folder
+          </p>
+        </button>
+      }
+      modal
+      // position="right center"
+    >
+      {" "}
+      <div className="w-[48rem] h-full flex flex-col items-center justify-center gap-8 bg-gray-700 rounded-xl">
+        <p className="text-gray-200 font-semibold tracking-wider text-xl p-4 w-full">
+          Add Folder
+        </p>
+        <div className="flex-row flex w-full justify-around items-center">
+          <FolderIcon
+            className={"w-1/3 text-center fill-yellow-600"}
+          ></FolderIcon>
+          <div className="w-2/5 h-full flex flex-col justify-center items-start">
+            <input
+              className="text-gray-200 font-semibold tracking-wider text-xl border-b-2 border-gray-600 focus:border-gray-200 bg-transparent focus:outline-none selection:bg-gray-500 w-full"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            ></input>
+            <input type="text"
+              className="text-gray-300 pt-2 pb-4 font-normal text-base border-b-2 border-gray-600 focus:border-gray-200 bg-transparent focus:outline-none selection:bg-gray-500 w-full"
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
+            ></input>
+            <button
+              type="submit"
+              className="w-full my-4 bg-transparent border-2 rounded-lg border-gray-200"
+              onClick={() => {
+                // Example fetch request to this endpoint
+                const options = {
+                  method: "POST",
+                  headers: {
+                    "folder-name": name,
+                    "folder-description": desc,
+                    "parent-folder-id": parentId,
+                  },
+                };
+
+                fetch("http://localhost:3000/folders/create", options)
+                  .then((response) => response.json())
+                  .then(async (data) => {
+                    FolderPool.rem(parentId);
+                    let folder = await FolderPool.get(parentId);
+                    setFolder(folder);
+                    setFolders(folder.children);
+                  }) // Reload the page) // close Popup; reload page
+                  .catch((error) => console.error("Error:", error));
+                  
+                  close();
+              }}
+            >
+              Finish
+            </button>
+          </div>
+        </div>
+      </div>{" "}
+    </Popup>
   );
 }

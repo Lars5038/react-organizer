@@ -1,0 +1,29 @@
+
+[SYSTEM]: 2024-10-25_10-40-43-535+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000
+
+[INFO  ]: 2024-10-25_10-44-02-418+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: a3a29f7b-785e-4b5a-a69a-c94edc4c8249
+              request: 
+                method: OPTIONS
+                headers: 
+                  host: 127.0.0.1:3000
+                  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0
+                  accept: */*
+                  accept-language: de,en-US;q=0.7,en;q=0.3
+                  accept-encoding: gzip, deflate, br, zstd
+                  access-control-request-method: POST
+                  access-control-request-headers: folder-description,folder-name,parent-folder-id
+                  referer: http://localhost:90/
+                  origin: http://localhost:90
+                  connection: keep-alive
+                  sec-fetch-dest: empty
+                  sec-fetch-mode: cors
+                  sec-fetch-site: cross-site
+                  priority: u=4
+                url: /folder/create
+                httpVersion: 1.1

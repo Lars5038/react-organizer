@@ -1,0 +1,6 @@
+
+[SYSTEM]: 2024-10-25_10-27-17-790+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000

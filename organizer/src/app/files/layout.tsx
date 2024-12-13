@@ -57,7 +57,7 @@ function ViewSkeleton({
       <div className="flex flex-col h-full w-full">
         <nav className="h-16 w-full "></nav> {/* top navbar */}
         <div className="flex flex-row h-full w-full">
-          <aside className="w-72 bg-black-700 h-full">
+          <aside className="w-72 bg-black-700 h-full hidden md:block">
             <p className="text-gray-300 pt-4 px-6 font-normal tracking-wider text-lg">
               FOLDERS
             </p>
@@ -82,10 +82,10 @@ function View({
   return (
     <div className="flex flex-row h-screen w-full bg-background-dark">
       {/* <aside className="w-16 bg-gray-700 h-full"></aside> */}
-      <div className="flex flex-col h-full w-full">
-        <nav className="h-16 w-full "></nav> {/* top navbar */}
-        <div className="flex flex-row h-full w-full">
-          <aside className="w-72 bg-black-700 h-full">
+      <div className="flex flex-col w-full">
+        <nav className="h-16 w-full"></nav> {/* top navbar */}
+        <div className="flex flex-row w-full">
+          <aside className="w-72 bg-black-700 h-full hidden lg:block">
             <p className="text-gray-300 pt-4 px-6 font-normal tracking-wider text-lg">
               FOLDERS
             </p>

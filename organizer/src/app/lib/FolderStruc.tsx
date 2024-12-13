@@ -21,7 +21,7 @@ export default function FolderStructure({ folder_ }: { folder_: FLDR }) {
   };
 
   return (
-    <div className="max-h-full overflow-y-scroll">
+    <div className="h-full overflow-y-scroll">
       {folders.map((fldr) => (
         <CollapsableFolder
           key={fldr.fid}
@@ -55,7 +55,7 @@ export function FolderStructureSkeleton() {
   ];
 
   return (
-    <div className="max-h-full overflow-y-scroll">
+    <div className="h-full overflow-y-scroll">
       {folders.map((fldr) => (
         <CollapsableFolderSkeleton key={fldr.id} folder={fldr} />
       ))}

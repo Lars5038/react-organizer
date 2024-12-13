@@ -1,4 +1,5 @@
-import { promises as fsPromises, writeFile, readFile } from "fs";
+import { exec } from "child_process";
+import { promises as fsPromises, writeFile, readFile, statSync, stat } from "fs";
 import { extname } from "path";
 import { start } from "repl";
 
@@ -133,7 +134,7 @@ async function isTypeScriptModule(filePath: string) {
           typeof ${endpointName}Module.execute === "function"
         ) {
           let params = getParamValuesFromUrl(req.url, "/${endpoint.replace(".e.ts", "")}");
-          let ret = await ${endpointName}Module.execute(req, res, body, chunks, params);
+          let ret = await ${endpointName}Module.execute(req, res, body, chunks, params, reqId);
           if (ret) 
             return;
         }
@@ -176,10 +177,23 @@ async function isTypeScriptModule(filePath: string) {
     }
   });
 
-  let startCode = `tsc server.ts && tsc auth.ts && tsc statics.ts && `;
-  imports.forEach((imp) => {
-    startCode += `tsc ${imp} && `;
-  });
+  let startCode = `tsc server.ts && tsc statics.ts && tsc mime.ts && tsc logger.ts && tsc auth.ts && `;
+
+  let compileDates = await getCompileDates("./compiles.json");
+
+  for(let i = 0; i < imports.length; i++) {
+    let imp = imports[i];
+    let modTime = statSync(imp).mtime;
+
+      // console.log(`${imp} was compiled last at ${new Date(compileDates.get(imp))}; Last modified: ${new Date(modTime)}; Compile: ${new Date(compileDates.get(imp)) < new Date(modTime)}`);
+      if (!compileDates.has(imp) || new Date(compileDates.get(imp)) < new Date(modTime)) {
+        startCode += `tsc ${imp} && `;
+        // console.log(startCode)
+        compileDates.set(imp, new Date());
+      }
+    }
+  
+  saveCompileDates("./compiles.json", compileDates);
   startCode += `node server.js`;
 
   writeFile("start.bat", startCode, (err) => {
@@ -190,6 +204,33 @@ async function isTypeScriptModule(filePath: string) {
     }
   });
 })();
+
+async function getCompileDates(path: string) {
+  let dates = new Map();
+
+  let datesJson = await readFileContent(path);
+  let datesObj = JSON.parse(datesJson);
+
+  datesObj.lastCompiled.forEach((d: { module: any; compileDate: any; }) => {
+    dates.set(d.module, d.compileDate);
+  });
+
+  return dates;
+}
+
+async function saveCompileDates(path: string, dates:Map<string, Date>) {
+  let datesObj: {lastCompiled: {module: string, compileDate: Date}[]} = {lastCompiled: []};
+  dates.forEach((value, key, map) => {
+    datesObj.lastCompiled.push({module: key, compileDate: value})
+  })
+  writeFile(path, JSON.stringify(datesObj), (err) => {
+    if (err) {
+      console.error("An error occurred while writing to the file:", err);
+    } else {
+      console.log(path + " has been written successfully.");
+    }
+  })
+}
 
 // if (req.method === 'POST' && req.url === '/execute') {
 //   let body = '';

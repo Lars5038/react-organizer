@@ -1,0 +1,28 @@
+
+[SYSTEM]: 2024-10-09_11-09-14-704+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000
+
+[INFO  ]: 2024-10-09_11-09-21-775+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: 4a43e341-0598-4468-b368-56b1f47ffc16
+              request: 
+                method: GET
+                headers: 
+                  host: 127.0.0.1:3000
+                  content-type: application/json
+                  user-agent: Insomnia/2023.5.6
+                  accept: */*
+                  content-length: 2
+                url: /1yy2jh3asd/run
+                httpVersion: 1.1
+
+[INFO  ]: 2024-10-09_11-09-21-792+02:00 run.e.ts: 
+          Ending request to /[id]/run/ with response
+              id: 4a43e341-0598-4468-b368-56b1f47ffc16
+              statusCode: 200
+              response: 
+                params: 
+                  id: 1yy2jh3asd

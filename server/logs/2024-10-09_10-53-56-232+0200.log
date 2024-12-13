@@ -1,0 +1,20 @@
+
+[SYSTEM]: 2024-10-09_10-53-56-235+02:00 server.ex.ts: 
+          Server running at http://127.0.0.1:3000/
+              running: true
+              hostname: 127.0.0.1
+              port: 3000
+
+[INFO  ]: 2024-10-09_10-54-02-153+02:00 SERVER (server.ex.ts): 
+          Incoming request
+              id: ed95a646-28c4-41ba-b0d5-06b4e74b7cd4
+              request: 
+                method: GET
+                headers: 
+                  host: 127.0.0.1:3000
+                  content-type: application/json
+                  user-agent: Insomnia/2023.5.6
+                  accept: */*
+                  content-length: 2
+                url: /1yy2jh3asd/run
+                httpVersion: 1.1
